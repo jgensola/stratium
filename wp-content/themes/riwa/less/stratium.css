@@ -1,3 +1,6 @@
+.page #main-navigation #navigation {
+  z-index: 200;
+}
 .page #main-navigation #navigation .container-fluid {
   padding: 0;
 }
@@ -89,6 +92,26 @@
 .page .sidebar-copyright span {
   display: block;
 }
+.page.pushmenu-push-toleft {
+  overflow: hidden;
+}
+.page.pushmenu-push-toleft .dark-screen {
+  display: block;
+}
+.page .dark-screen {
+  display: none;
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 500%;
+  background: #000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+  -webkit-opacity: 0.2;
+  -moz-opacity: 0.2;
+  opacity: 0.2;
+  cursor: pointer;
+}
 @media only screen and (min-width: 768px) {
   .page #main-navigation #navigation .contact-details {
     display: inline-block;
@@ -148,11 +171,15 @@
     margin-top: 15px;
     color: #fff;
   }
-  .pushmenu {
+  .page .pushmenu {
     right: -270px !important;
   }
-  .pushmenu-push-toleft {
+  .page.pushmenu-push-toleft {
     left: 0 !important;
+    overflow: auto;
+  }
+  .page.pushmenu-push-toleft .dark-screen {
+    display: none;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -258,6 +285,9 @@
     background: url('../images/connector.svg');
     content: '';
   }
+  .page footer.dark .contact-details {
+    max-width: 50%;
+  }
 }
 .page .contact-details a {
   display: block;
@@ -285,14 +315,11 @@
   font-size: 0.6em;
   content: '\f0e0';
 }
-.page .contact-details a:hover {
-  color: #92cbdc;
-}
 a {
-  -webkit-transition: all 0.4s linear 0.1s;
-  -moz-transition: all 0.4s linear 0.1s;
-  -ms-transition: all 0.4s linear 0.1s;
-  -o-transition: all 0.4s linear 0.1s;
+  -webkit-transition: all 0.4s !important;
+  -moz-transition: all 0.4s !important;
+  -ms-transition: all 0.4s !important;
+  -o-transition: all 0.4s !important;
 }
 a:hover {
   color: #92cbdc !important;

@@ -120,14 +120,6 @@ jQuery(function ($) {
 			$menuRight.toggleClass("pushmenu-open");
 			return false;
 		});
-
-		$('.dark-screen').on("click", function () {
-			$('#menu_bars').toggleClass("active");
-			$(".pushmenu-push").toggleClass("pushmenu-push-toleft");
-			$menuRight.toggleClass("pushmenu-open");
-			return false;
-		});
-
 	}
 
 	// Menu in sidebar				  

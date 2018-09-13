@@ -1,5 +1,7 @@
 .page {
     #main-navigation #navigation {
+        z-index: 200;
+
         .container-fluid {
             padding: 0;
         }
@@ -100,84 +102,114 @@
             display: block;
         }
     }
+
+    &.pushmenu-push-toleft {
+        overflow: hidden;
+
+        .dark-screen {
+            display: block;
+        }
+    }
+
+    .dark-screen {
+        display: none;
+        position: absolute;
+        z-index: 200;
+
+        width: 100%;
+        height: 500%;
+
+        background: @black;
+
+        .opacity(.2);
+
+        cursor: pointer;
+    }
 }
 
 // iPad Screens
 @media only screen  and (min-width: @screen__m) {
-    .page #main-navigation #navigation {
-        .contact-details {
-            display: inline-block;
+    .page {
+        #main-navigation #navigation {
+            .contact-details {
+                display: inline-block;
 
-            margin: 0 0 -1px 15px;
-        }
+                margin: 0 0 -1px 15px;
+            }
 
-        .col-md-12 {
-            max-height: 182px;
-            min-height: 85px;
-            max-width: @screen__xl;
-            padding: 0 30px;
-        }
+            .col-md-12 {
+                max-height: 182px;
+                min-height: 85px;
+                max-width: @screen__xl;
+                padding: 0 30px;
+            }
 
-        .navbar {
-            width: 100%;
+            .navbar {
+                width: 100%;
 
-            .flex-display();
-            .justify-content(space-between);
-            .align-items(center);
-        }
+                .flex-display();
+                .justify-content(space-between);
+                .align-items(center);
+            }
 
-        .navbar-brand {
-            max-width: 230px;
-        }
+            .navbar-brand {
+                max-width: 230px;
+            }
 
-        .navbar-header {
-            .flex(1);
-            .flex-display();
-            .align-items(flex-end);
-        }
+            .navbar-header {
+                .flex(1);
+                .flex-display();
+                .align-items(flex-end);
+            }
 
-        .navbar-right {
-            padding: 0;
-            margin: 0;
-        }
+            .navbar-right {
+                padding: 0;
+                margin: 0;
+            }
 
-        .navbar-brand {
-            padding: 0;
-        }
+            .navbar-brand {
+                padding: 0;
+            }
 
-        .navbar-default {
-            .navbar-nav > li {
-                > a {
-                    text-transform: none;
+            .navbar-default {
+                .navbar-nav > li {
+                    > a {
+                        text-transform: none;
+                    }
+
+                    &.active > a {
+                        border-bottom-color: @pelorous;
+                    }
+
+                    &:last-of-type > a {
+                        margin-right: 0;
+                    }
                 }
+            }
 
-                &.active > a {
-                    border-bottom-color: @pelorous;
-                }
+            &.affix {
+                .navbar-nav > li > a {
+                    margin-top: 15px;
 
-                &:last-of-type > a {
-                    margin-right: 0;
+                    color: @white;
                 }
             }
         }
 
-        &.affix {
-            .navbar-nav > li > a {
-                margin-top: 15px;
+        .pushmenu {
+            right: -270px !important;
+        }
 
-                color: @white;
+        &.pushmenu-push-toleft {
+            left: 0 !important;
+
+            overflow: auto;
+
+            .dark-screen {
+                display: none;
             }
         }
     }
-
-    .pushmenu {
-        right: -270px !important;
-    }
-
-    &.pushmenu-push-toleft {
-        left: 0 !important;
-    }
-
 }
 
 // Screens >= 1024px

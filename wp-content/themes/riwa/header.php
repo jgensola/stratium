@@ -17,6 +17,7 @@
 </head>
 
 <body <?php body_class(); ?> data-spy="scroll" data-target=".navbar" data-offset="150">
+<div class="dark-screen"></div>
 <div class="wrapper" id="top">
 
 <!-- LOADER -->
