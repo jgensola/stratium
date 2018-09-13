@@ -1,0 +1,46 @@
+.page {
+    .contact-details {
+        a {
+            display: block;
+
+            margin-bottom: 2px;
+
+            color: @white;
+
+            font-size: 10px;
+            line-height: 1;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            &:before {
+                margin-right: 7px;
+
+                font-family: @icon-font;
+            }
+
+            &.mobile:before {
+                margin-right: 9px;
+
+                content: @icon-mobile;
+            }
+
+            &.phone:before {
+                font-size: .8em;
+
+                content: @icon-phone;
+            }
+
+            &.email:before {
+                font-size: .6em;
+
+                content: @icon-envelope;
+            }
+
+            &:hover {
+                color: lighten(@pelorous, 20%);
+            }
+        }
+    }
+}

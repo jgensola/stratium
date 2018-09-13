@@ -1,0 +1,90 @@
+/* V 1.0 */
+
+/* REDUX FRAMEWORK */
+.redux-notice { display:none !important; }
+.rAds a { display: none !important; }
+.redux-container #redux-header { display: none !important; }
+.redux-container { margin-top: 0; }
+
+.redux_custom_header { background: #0073aa; }
+.redux_custom_header img { padding: 20px 15px; }
+
+.acf_postbox .hndle { background: #0073aa; color: #FFF; }
+.acf_postbox .toggle-indicator:before { color: rgba(255, 255, 255, 0.68); }
+/*.acf_postbox .inside div:nth-child:(2n+2) { background: #ccc !important; }*/
+
+/* CUSTOM VC ICONS */
+.custom-vc-icons {
+	background-color: #114c7f;
+	background-image: none !important;
+	border-radius: 5px;
+}
+.custom-vc-icons:before {
+	font-family:'FontAwesome';
+	color: #FFF;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+    font-style: normal;
+    padding: 2px 0 0 0;
+	font-weight: normal !important;
+}
+a.dropable_el .custom-vc-icons {
+	padding-top: 4px;
+}
+
+.vc-counter { background-color: #f1c30e; }
+.vc-counter:before { padding-top: 4px; content: '\f252'; }
+
+.vc-customheading {	background-color: #f1c30e; }
+.vc-customheading:before { padding-top: 4px; content: '\f1dc'; }
+
+.vc-iconsection { background-color: #f1c30e; }
+.vc-iconsection:before { padding-top: 4px; content: '\f000'; }
+
+.vc-progressbar { background-color: #f1c30e; }
+.vc-progressbar:before { padding-top: 5px; content: '\f0ae'; }
+
+.vc-quote { background-color: #f1c30e; }
+.vc-quote:before { padding-top: 5px; content: '\f10d'; }
+
+.vc-tabbed { background-color: #f1c30e; }
+.vc-tabbed:before { padding-top: 5px; content: '\f00b'; }
+
+.vc-blog { background-color: #f1c30e; }
+.vc-blog:before { padding-top: 5px; content: '\f044'; }
+
+.vc-portfolio { background-color: #f1c30e; }
+.vc-portfolio:before { padding-top: 4px; content: '\f03e'; }
+
+.vc-pricing { background-color: #f1c30e; }
+.vc-pricing:before { padding-top: 4px; content: '\f0d6'; }
+
+.vc-testimonials { background-color: #f1c30e; }
+.vc-testimonials:before { padding-top: 4px; content: '\f0e6'; }
+ 
+.vc-food { background-color: #00a0d2; }
+.vc-food:before { padding-top: 4px;	content: '\f179'; }
+
+.vc-foodmenu { background-color: #00a0d2; }
+.vc-foodmenu:before { padding-top: 4px; content: '\f0f5'; }
+
+.vc-receipes { background-color: #00a0d2; }
+.vc-receipes:before { padding-top: 4px; content: '\f0f6'; }
+
+.vc-social { background-color: #00a0d2; }
+.vc-social:before { padding-top: 4px; content: '\f1e0'; }
+
+.vc-team { background-color: #f1c30e; }
+.vc-team:before { padding-top: 4px; content: '\f0c0'; }
+
+.vc-contactinfo { background-color: #f1c30e; }
+.vc-contactinfo:before { padding-top: 4px; content: '\f003'; }
+
+img.wpb_vc_param_value.image.attach_image {
+    border-radius: 5px;
+    width: 94px;
+    margin: 10px 0 0 0;
+}
+
+/* META BOXES */

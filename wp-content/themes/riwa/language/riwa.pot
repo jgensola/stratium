@@ -1,0 +1,449 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-14 15:04+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: THEMES INDUSTRY <SUPPORT@THEMESINDUSTRY.COM>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: single.php:30
+msgid ""
+"<span class=\"meta-nav\">Published in</span><span class=\"post-title\">"
+"%title</span>"
+msgstr ""
+
+#: single.php:37
+msgid "Next"
+msgstr ""
+
+#: single.php:38
+msgid "Next post:"
+msgstr ""
+
+#: single.php:40
+msgid "Previous"
+msgstr ""
+
+#: single.php:41
+msgid "Previous post:"
+msgstr ""
+
+#: archive.php:31 search.php:33 index.php:22
+msgid "Previous page"
+msgstr ""
+
+#: archive.php:32 search.php:34 index.php:23
+msgid "Next page"
+msgstr ""
+
+#: archive.php:33 search.php:35 index.php:24 image.php:53
+#: template-parts/content-page.php:22
+msgid "Page"
+msgstr ""
+
+#: 404.php:13
+msgid "404"
+msgstr ""
+
+#: 404.php:17
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: 404.php:19
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: 404.php:20
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#. Name of the template
+msgid "Page Builder"
+msgstr ""
+
+#: comments.php:18
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#. 1: number of comments, 2: post title
+#: comments.php:22
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:56
+msgid "Comments are closed."
+msgstr ""
+
+#: image.php:25
+msgid "Previous Image"
+msgstr ""
+
+#: image.php:26
+msgid "Next Image"
+msgstr ""
+
+#: image.php:49 template-parts/content-single.php:21
+#: template-parts/content-page.php:18
+msgid "Pages:"
+msgstr ""
+
+#: image.php:66
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr ""
+
+#. %s: Name of current post
+#: image.php:77
+#, php-format
+msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: image.php:95
+msgctxt "Parent post link"
+msgid ""
+"<span class=\"meta-nav\">Published in</span><span class=\"post-title\">"
+"%title</span>"
+msgstr ""
+
+#: template-parts/content.php:11
+msgid "Featured"
+msgstr ""
+
+#: template-parts/content.php:37
+msgid "Posted In: "
+msgstr ""
+
+#: template-parts/content.php:51 template-parts/content-single.php:53
+msgid "Tags: "
+msgstr ""
+
+#: template-parts/content-single.php:40
+msgid "Categories:"
+msgstr ""
+
+#: template-parts/content-single.php:62
+msgid "Share this post: "
+msgstr ""
+
+#: template-parts/content-single.php:76
+msgid "Author: "
+msgstr ""
+
+#: template-parts/content-none.php:9
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:15
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:19
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:24
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. %s: Name of current post
+#: template-parts/content-search.php:27 template-parts/content-page.php:32
+msgid "Edit "
+msgstr ""
+
+#: template-parts/biography.php:18
+msgid "Author:"
+msgstr ""
+
+#: template-parts/biography.php:23
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: inc/vt_resize.php:121
+msgid ""
+"GD Library Error: imagecreatetruecolor does not exist - please contact your "
+"webhost and ask them to install the GD library"
+msgstr ""
+
+#: inc/enqueues.php:49
+msgid "expand child menu"
+msgstr ""
+
+#: inc/enqueues.php:50
+msgid "collapse child menu"
+msgstr ""
+
+#: inc/plugins.php:12
+msgid "Visual Composer"
+msgstr ""
+
+#: inc/plugins.php:24
+msgid "Revolution Slider"
+msgstr ""
+
+#: inc/plugins.php:31
+msgid "Revolution Slicey Addon"
+msgstr ""
+
+#: inc/plugins.php:38
+msgid "Riwa Essentials"
+msgstr ""
+
+#: inc/plugins.php:45
+msgid "ACF Repeater"
+msgstr ""
+
+#: inc/plugins.php:52
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/plugins.php:57
+msgid "Advanced Custom Fields"
+msgstr ""
+
+#: inc/plugins.php:62
+msgid "MailPoet Newsletters"
+msgstr ""
+
+#: inc/plugins.php:67
+msgid "Redux Framework"
+msgstr ""
+
+#: inc/googlefont.php:10
+msgctxt "Roboto Condensed font: on or off"
+msgid "on"
+msgstr ""
+
+#. If there are characters in your language that are not supported by Montserrat, translate this to 'off'. Do not translate into your own language.
+#: inc/googlefont.php:15
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/template_tags.php:20
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr ""
+
+#: inc/template_tags.php:33
+msgctxt "Used before post format."
+msgid "Format"
+msgstr ""
+
+#: inc/template_tags.php:45
+#, php-format
+msgid "Leave a comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template_tags.php:74
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr ""
+
+#: inc/template_tags.php:90 inc/template_tags.php:98
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ""
+
+#: inc/template_tags.php:93
+msgctxt "Used before category names."
+msgid "Categories"
+msgstr ""
+
+#: inc/template_tags.php:101
+msgctxt "Used before tag names."
+msgid "Tags"
+msgstr ""
+
+#. %s: Name of current post
+#: inc/template_tags.php:179
+msgid "Continue reading"
+msgstr ""
+
+#: inc/back_compat.php:28 inc/back_compat.php:36 inc/back_compat.php:47
+#, php-format
+msgid ""
+"Themes Industry requires at least WordPress version 4.4. You are running "
+"version %s. Please upgrade and try again."
+msgstr ""
+
+#: inc/breadcrumb.php:11
+msgid "Home"
+msgstr ""
+
+#: inc/breadcrumb.php:12
+#, php-format
+msgid "Archive by Category \"%s\""
+msgstr ""
+
+#: inc/breadcrumb.php:13
+#, php-format
+msgid "Search Results for \"%s\" Query"
+msgstr ""
+
+#: inc/breadcrumb.php:14
+#, php-format
+msgid "Posts Tagged \"%s\""
+msgstr ""
+
+#: inc/breadcrumb.php:15
+#, php-format
+msgid "Articles Posted by %s"
+msgstr ""
+
+#: inc/breadcrumb.php:16
+msgid "Error 404"
+msgstr ""
+
+#: inc/breadcrumb.php:17
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/breadcrumb.php:18
+#, php-format
+msgid "Comment Page %s"
+msgstr ""
+
+#: inc/customizer.php:78
+msgid "Base Color Scheme"
+msgstr ""
+
+#: inc/customizer.php:93
+msgid "Page Background Color"
+msgstr ""
+
+#: inc/customizer.php:108
+msgid "Link Color"
+msgstr ""
+
+#: inc/customizer.php:120
+msgid "Main Text Color"
+msgstr ""
+
+#: inc/customizer.php:132
+msgid "Secondary Text Color"
+msgstr ""
+
+#: inc/customizer.php:150
+msgid "Default"
+msgstr ""
+
+#: inc/customizer.php:160
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer.php:170
+msgid "Gray"
+msgstr ""
+
+#: inc/customizer.php:180
+msgid "Red"
+msgstr ""
+
+#: inc/customizer.php:190
+msgid "Yellow"
+msgstr ""
+
+#: inc/widgets.php:7
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widgets.php:9
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: inc/widgets.php:17
+msgid "Footer Widgets - Column 1"
+msgstr ""
+
+#: inc/widgets.php:19 inc/widgets.php:29 inc/widgets.php:39 inc/widgets.php:49
+msgid "Appears at the bottom of the content on posts and pages."
+msgstr ""
+
+#: inc/widgets.php:27
+msgid "Footer Widgets - Column 2"
+msgstr ""
+
+#: inc/widgets.php:37
+msgid "Footer Widgets - Column 3"
+msgstr ""
+
+#: inc/widgets.php:47
+msgid "Footer Widgets - Column 4"
+msgstr ""
+
+#: inc/misc.php:38
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/misc.php:39
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/misc.php:40
+msgid "Left Half Menu"
+msgstr ""
+
+#: inc/misc.php:41
+msgid "Right Half Menu"
+msgstr ""
+
+#: inc/misc.php:42
+msgid "Right Sidebar Menu"
+msgstr ""
+
+#: inc/classes/class-header.php:114 inc/classes/class-header.php:161
+#: inc/classes/class-header.php:185
+msgid "Define Your Primary Menu"
+msgstr ""
+
+#: inc/classes/class-header.php:230
+msgid "Define Mobile Menu"
+msgstr ""
+
+#: inc/classes/class-footer.php:46
+msgid "&copy; Copyright Riwa."
+msgstr ""
+
+#. Name of the theme
+msgid "Riwa"
+msgstr ""
+
+#. Description of the theme
+msgid "Riwa will make your food related website look beautiful"
+msgstr ""
+
+#. URI of the theme
+msgid "http://Riwa.themesindustry.com"
+msgstr ""
+
+#. Author of the theme
+msgid "Themes Industry"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.themesindustry.com"
+msgstr ""

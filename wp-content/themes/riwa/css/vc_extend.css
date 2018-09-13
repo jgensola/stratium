@@ -1,0 +1,31 @@
+/* VC Extend */
+
+
+/* Icons */
+.ti-icons-wrapper {
+	display: none;
+}
+.icon-selector {
+	height:200px;
+	overflow-x: hidden;
+    overflow-y: scroll;
+	margin:10px 0 5px 0;
+}
+i.icon { 
+	padding: 10px 0 0 5px;
+    border: 1px solid #CCC;
+    font-size: 26px;
+    margin: 0 5px 5px 0;
+    width: 30px;
+    height: 25px; 
+	cursor:pointer;
+}
+
+/* Param Icons */
+.icon-wpb-vc_sortgrid {
+	background:url(../images/vc_icons_sprite.png) no-repeat;
+	background-position: 0 -256px;
+}
+i.vc_general.vc_element-icon.accordion_container {
+    background-position: 0px -416px;
+}

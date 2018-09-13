@@ -1,0 +1,190 @@
+.page {
+    #main-navigation #navigation {
+        .container-fluid {
+            padding: 0;
+        }
+
+        .row {
+            width: 100%;
+            margin: 0;
+
+            .flex-display();
+            .justify-content(center);
+        }
+
+        .contact-details {
+            display: none;
+        }
+
+        .col-md-12 {
+            width: 100%;
+            min-height: 77px;
+
+            .flex-display();
+            .justify-content(space-between);
+            .align-items(center);
+        }
+
+        #menu_bars {
+            right: 0;
+            top: 0;
+
+            padding: 0;
+
+            .flex-order(2);
+
+            span.t2 {
+                right: 0;
+
+                width: 20px;
+            }
+        }
+
+        .navbar {
+            .flex-order(1);
+        }
+
+        &.affix {
+            .row {
+                background: @mine-shaft;
+            }
+
+            .col-md-12 {
+                background: transparent;
+            }
+
+            #menu_bars span {
+                background: @white;
+            }
+        }
+    }
+
+    .pushmenu {
+        background: lighten(@black, 30%);
+
+        div {
+            display: none;
+
+            &.clearfix {
+                display: block;
+            }
+        }
+    }
+
+    .dl-menuwrapper li,
+    .no-touch .dl-menuwrapper li {
+        border-bottom-color: @gray;
+
+        &:last-child {
+            border: none;
+        }
+
+        a:hover {
+            background: transparent !important;
+        }
+    }
+
+    .sidebar-copyright {
+        bottom: 15px;
+
+        .copyright-text {
+            margin: 15px;
+
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: normal;
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+
+// iPad Screens
+@media only screen  and (min-width: @screen__m) {
+    .page #main-navigation #navigation {
+        .contact-details {
+            display: inline-block;
+
+            margin: 0 0 -1px 15px;
+        }
+
+        .col-md-12 {
+            max-height: 182px;
+            min-height: 85px;
+            max-width: @screen__xl;
+            padding: 0 30px;
+        }
+
+        .navbar {
+            width: 100%;
+
+            .flex-display();
+            .justify-content(space-between);
+            .align-items(center);
+        }
+
+        .navbar-brand {
+            max-width: 230px;
+        }
+
+        .navbar-header {
+            .flex(1);
+            .flex-display();
+            .align-items(flex-end);
+        }
+
+        .navbar-right {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar-brand {
+            padding: 0;
+        }
+
+        .navbar-default {
+            .navbar-nav > li {
+                > a {
+                    text-transform: none;
+                }
+
+                &.active > a {
+                    border-bottom-color: @pelorous;
+                }
+
+                &:last-of-type > a {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &.affix {
+            .navbar-nav > li > a {
+                margin-top: 15px;
+
+                color: @white;
+            }
+        }
+    }
+
+    .pushmenu {
+        right: -270px !important;
+    }
+
+    &.pushmenu-push-toleft {
+        left: 0 !important;
+    }
+
+}
+
+// Screens >= 1024px
+@media only screen  and (min-width: @screen__l) {
+    .page #main-navigation #navigation {
+        .contact-details {
+            margin-left: 20px;
+        }
+    }
+}
