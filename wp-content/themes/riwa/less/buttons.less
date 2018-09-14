@@ -1,7 +1,60 @@
-a {
-    .transition(all .4s ) !important;
+.page {
+    a {
+        .transition(all .4s) !important;
 
-    &:hover {
-        color: lighten(@pelorous, 20%) !important;
+        &:hover {
+            color: lighten(@pelorous, 20%) !important;
+        }
+    }
+
+    .new-button {
+        display: inline-block;
+
+        border: 2px solid @white;
+        border-radius: 0;
+        padding: 2px 8px;
+
+        color: @white;
+
+        text-transform: uppercase;
+        text-align: center;
+
+        &:hover {
+            color: @white !important;
+            background: @white-button-hover;
+        }
+    }
+
+    .section .new-button {
+        border-color: @black;
+
+        color: @black;
+
+        &:hover {
+            color: @white !important;
+            background: @black;
+        }
+    }
+
+    #back-top {
+        background: @pelorous;
+        color: @white !important;
+
+        .opacity(.5);
+
+        &:hover {
+            .opacity(1);
+        }
+    }
+}
+
+// iPad Screens
+@media only screen  and (min-width: @screen__m) {
+    .page {
+        .new-button {
+            padding: 5px 12px;
+
+            font-size: 20px;
+        }
     }
 }

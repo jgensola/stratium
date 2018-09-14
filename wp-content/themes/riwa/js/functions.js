@@ -32,7 +32,20 @@ jQuery(function ($) {
         }  
         return true; 
         
-    }); 
+    });
+
+    $('.dl-menu > li > a').click(function(e){
+
+        var link = $(this).attr("href");
+        if(link.lastIndexOf('#') === 0){
+            $('html, body').animate({
+                scrollTop: $(link).offset().top
+                }, 700);
+            return 0;
+        }
+        return true;
+
+    });
    
 
 	$(window).on('scroll', function () {
@@ -268,7 +281,13 @@ jQuery(function ($) {
     //call client slider
     clientSlider.sliderCall();
 
- 
+    $('.owl-carousel.homepage').owlCarousel({
+        loop: true,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        pagination: true
+    });
 
 
 	// ======================================================

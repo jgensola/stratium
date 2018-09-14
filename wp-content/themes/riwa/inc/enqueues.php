@@ -10,7 +10,8 @@ function riwa_scripts() {
 	wp_enqueue_style( 'bootstrap-datepicker', get_template_directory_uri() . '/css/bootstrap-datetimepicker.css', array(), '1.0' );
 	wp_enqueue_style( 'riwa-icons', get_template_directory_uri() . '/css/riwa-icons.css', array(), '1.0' );
 	wp_enqueue_style( 'font-awesome-min', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.7.0' );
-	wp_enqueue_style( 'owl-carousel', get_template_directory_uri() . '/css/owl.carousel.css', array(), '1.3.3' );
+	wp_enqueue_style( 'owl-carousel-min', get_template_directory_uri() . '/css/owl.carousel.min.css', array(), '1.3.3' );
+	wp_enqueue_style( 'owl-carousel-default-min', get_template_directory_uri() . '/css/owl.theme.default.min.css', array(), '1.3.3' );
 	wp_enqueue_style( 'fancybox', get_template_directory_uri() . '/css/fancybox.css', array(), '2.1.5' );
 	wp_enqueue_style( 'zerogrid', get_template_directory_uri() . '/css/zerogrid.css', array(), '3.0' );
 	wp_enqueue_style( 'owl-transitions', get_template_directory_uri() . '/css/owl.transitions.css', array(), '1.3.2' );
