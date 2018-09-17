@@ -40,6 +40,8 @@ function riwa_setup() {
 		'left-half'  => esc_html__( 'Left Half Menu', 'riwa' ),
 		'right-half'  => esc_html__( 'Right Half Menu', 'riwa' ),
 		'right-sidebar-menu'  => esc_html__( 'Right Sidebar Menu', 'riwa' ),
+		'static' => esc_html('Static Page Menu','riwa'),
+		'static-mobile' => esc_html('Static Page Mobile Menu','riwa')
 		//'left-sidebar-menu'  => esc_html__( 'Right Sidebar Menu', 'riwa' ),
 	) );
 

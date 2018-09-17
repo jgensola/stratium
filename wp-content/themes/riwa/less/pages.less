@@ -1,4 +1,4 @@
-.page {
+@{stratium-pages} {
     p {
         font-size: 16px;
     }
@@ -48,7 +48,7 @@
         padding: 0;
 
         .content-area {
-            padding-top: 0;
+            padding: 0;
         }
     }
 
@@ -167,6 +167,7 @@
             height: 8px;
             width: 8px;
             border: none !important;
+            outline: none !important;
 
             background: @white;
 
@@ -194,6 +195,7 @@
     .section {
         margin-top: -77px;
         padding-top: 77px;
+        outline: none !important;
 
         > .vc_column-inner {
             max-width: @page-max-width;
@@ -354,6 +356,7 @@
 
                     font-family: @icon-font;
                     font-size: 40px;
+                    line-height: 1.2;
 
                     content: @quote-left;
                 }
@@ -375,12 +378,138 @@
         z-index: 3;
 
         background: @concrete;
+
+        .text {
+            margin-top: 20px;
+
+            background: @white;
+        }
+    }
+
+    // Contact Us
+    .contact {
+        .contact-form {
+            margin-top: 20px;
+            padding: 15px;
+
+            background: @concrete;
+        }
+
+        .text {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            .border-radius(0);
+
+            border: 1px solid @dusty-gray;
+        }
+
+        .wpcf7-form {
+            .wpcf7-not-valid {
+                border-color: @fuzzy-wuzzy-brown !important;
+            }
+
+            .wpcf7-validation-errors {
+                margin: 0 !important;
+
+                background: @fuzzy-wuzzy-brown;
+
+                text-align: center;
+            }
+
+            .wpcf7-mail-sent-ng,
+            .wpcf7-aborted {
+                margin: 0;
+                padding: 5px 15px;
+                border: none;
+
+                color: @white;
+                background: @fuzzy-wuzzy-brown;
+
+                text-align: center;
+
+                .border-radius(15px);
+            }
+        }
+    }
+
+    // Static Pages
+    &.page-template-page-static-php,
+    &.error404 {
+        #primary {
+            background: @concrete;
+        }
+
+        .site-main {
+            margin-top: 77px;
+            padding: 30px 15px;
+        }
+
+        h2 {
+            margin: 0 0 30px;
+
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h3 {
+            margin: 30px 0 10px !important;
+
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        li {
+            margin: 10px 0 0 10px;
+        }
+
+        article {
+            padding: 15px;
+
+            background: @white;
+
+            a {
+                color: @pelorous;
+            }
+        }
+    }
+
+    &.error404 {
+        > .wrapper {
+            height: 100%;
+
+            .flex-display();
+            .flex-direction(column);
+
+            > .container {
+                height: 100%;
+                min-height: 400px;
+
+                .flex-display();
+            }
+        }
+
+        #primary {
+            height: 100%;
+            width: 100%;
+
+            .flex-display();
+            .align-items(center);
+        }
+
+        h2 {
+            font-size: 50px;
+        }
     }
 }
 
 // iPad Screens
 @media only screen  and (min-width: @screen__m) {
-    .page {
+    @{stratium-pages} {
         .wrapper > .container {
             width: 100%;
             padding: 0;
@@ -437,7 +566,12 @@
                 }
 
                 > .wpb_content_element {
+                    display: inherit;
+
                     width: 50%;
+                    //height: 100%;
+
+                    .flex(1 0 auto);
 
                     p:nth-last-of-type(2) {
                         margin-bottom: 85px;
@@ -508,12 +642,104 @@
                 }
             }
         }
+
+        // About
+        .about {
+            > .vc_column-inner {
+                .flex-display();
+
+                &:after {
+                    display: block;
+                    width: 50%;
+                    margin: -40px 0 -40px 40px;
+
+                    background: url('@{image-path}world.svg') no-repeat center left;
+                    background-size: contain;
+
+                    content: '';
+                }
+
+                > .wpb_wrapper {
+                    width: 50%;
+                }
+
+            }
+        }
+
+        // Contact Us
+        .contact {
+            .contact-form {
+                padding: 30px;
+            }
+
+            form {
+                //max-width: 648px;
+                margin: auto;
+            }
+
+            .text {
+                margin-bottom: 30px;
+            }
+
+            .form-fields {
+                .flex-display();
+                .flex-wrap(wrap);
+
+                p {
+                    width: 50%;
+                }
+            }
+
+            .your-name,
+            .your-tel {
+                margin-right: 10px;
+            }
+
+            .your-email,
+            .your-company {
+                margin-left: 10px;
+            }
+
+            input[type=submit].new-button,
+            input[type=reset].new-button {
+                width: auto;
+                margin-right: 10px;
+            }
+
+            .wpcf7-form {
+                .wpcf7-response-output {
+                    margin-top: 20px !important;
+                }
+            }
+
+            .button-container {
+                text-align: center;
+            }
+        }
+
+        // Static Pages
+        &.page-template-page-static-php,
+        &.error404{
+            .site-main {
+                max-width: @page-max-width;
+                margin: 85px auto 0;
+                padding: 40px 30px;
+            }
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            article {
+                padding: 30px;
+            }
+        }
     }
 }
 
 // Screens >= 1024px
 @media only screen  and (min-width: @screen__l) {
-    .page {
+    @{stratium-pages} {
         .section .new-button {
             width: auto;
         }
@@ -530,6 +756,25 @@
 
             img {
                 max-height: 44px;
+            }
+        }
+    }
+}
+
+// Screens >= 1051px
+@media only screen  and (min-width: @screen__l + 27) {
+    @{stratium-pages} {
+        // About
+        .about {
+            > .vc_column-inner {
+                &:after {
+                    width: 30%;
+                    margin: -10px 0 -10px 40px;
+                }
+
+                > .wpb_wrapper {
+                    width: 70%;
+                }
             }
         }
     }

@@ -1,146 +1,160 @@
-.page footer {
-     &.dark {
-         background: @mine-shaft;
-     }
-
-     .widget-title {
-         display: none;
-     }
-
-     .half_space {
-         display: none;
-     }
-
-     .widget-area-padding {
-         padding: 30px 0;
-     }
-
-     .contact-details {
-         a {
-             color: @nobel;
-
-             font-size: 12px;
-             line-height: 1.2;
-         }
-     }
-
-     .widget {
-         margin-bottom: 0;
-
-         h4 {
-             padding-bottom: 4px;
-             text-transform: none;
-         }
-     }
-
-     p {
-         margin-top: 30px;
-
-         color: @gray;
-
-         line-height: 1.2;
-
-         span {
-             display: block;
-         }
-     }
-
-     .copyright {
-         a {
-             display: block;
-
-             color: @nobel;
-         }
-     }
-
-     .footer_column {
-         padding-bottom: 0;
-     }
-
-     .row {
-         display: none;
-
-         &.widget-area-padding {
-             display: block;
-
-             max-width: @page-max-width - 30px;
-         }
-     }
- }
-
-// iPad Screens
-@media only screen  and (min-width: @screen__m) {
-    .page footer.dark {
-        overflow: hidden;
-
-        .row {
-            margin: 0 auto;
+@{stratium-pages} {
+    footer {
+        &.dark {
+            background: @mine-shaft;
         }
 
-        .container {
-            padding: 0 30px;
-            width: 100%;
+        .widget-title {
+            display: none;
+        }
+
+        .half_space {
+            display: none;
+        }
+
+        .widget-area-padding {
+            padding: 30px 0;
+        }
+
+        .contact-details {
+            a {
+                color: @nobel;
+
+                font-size: 12px;
+                line-height: 1.2;
+            }
+        }
+
+        .widget {
+            margin-bottom: 0;
+
+            h4 {
+                padding-bottom: 4px;
+                text-transform: none;
+            }
+        }
+
+        p {
+            margin-top: 30px;
+
+            color: @gray;
+
+            line-height: 1.2;
+
+            span {
+                display: block;
+            }
         }
 
         .copyright {
-            float: right;
+            a {
+                display: block;
 
-            padding: 0;
-            margin-top: -65px;
-
-            text-align: right;
-        }
-
-        .widget_text {
-            position: relative;
-            z-index: 2;
-
-            padding: 0;
+                color: @nobel;
+            }
         }
 
         .footer_column {
-            float: right;
+            padding-bottom: 0;
+        }
 
-            width: 450px;
-            padding: 0;
+        .row {
+            display: none;
 
-            &:before {
+            &.widget-area-padding {
                 display: block;
+
+                max-width: @page-max-width-outer - 30px;
+            }
+        }
+    }
+}
+
+// iPad Screens
+@media only screen  and (min-width: @screen__m) {
+    @{stratium-pages} {
+        footer.dark {
+            overflow: hidden;
+
+            .row {
+                margin: 0 auto;
+            }
+
+            .container {
+                padding: 0 30px;
+                width: 100%;
+            }
+
+            .copyright {
+                float: right;
+
+                padding: 0;
+                margin-top: -65px;
+
+                text-align: right;
+            }
+
+            .widget_text {
+                position: relative;
+                z-index: 2;
+
+                padding: 0;
+            }
+
+            .footer_column {
+                float: right;
+
+                width: 450px;
+                padding: 0;
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: -30px;
+                    left: -870px;
+                    z-index: 1;
+
+                    width: 500%;
+                    height: 236px;
+
+                    background-image: url('@{image-path}world-footer.svg');
+                    background-repeat-x: no-repeat;
+                    background-position-x: -3307px;
+                    background-position-y: -1964px;
+                    background-size: 4900px;
+
+                    content: '';
+                }
+
+            }
+
+            .textwidget:before {
                 position: absolute;
-                top: -30px;
-                left: -870px;
-                z-index: 1;
+                left: -200px;
+                top: 12px;
+                display: block;
 
-                width: 500%;
-                height: 236px;
+                height: 95.87782px;
+                width: 187.10631px;
 
-                background-image: url('@{image-path}world-footer.svg');
-                background-repeat-x: no-repeat;
-                background-position-x: -3307px;
-                background-position-y: -1964px;
-                background-size: 4900px;
+                background: url('@{image-path}connector.svg');
 
                 content: '';
             }
 
+            .contact-details {
+                max-width: 50%;
+            }
         }
 
-        .textwidget:before {
-            position: absolute;
-            left: -200px;
-            top: 12px;
-            display: block;
+        &.error404 {
+            footer.dark {
+                overflow: unset;
 
-            height: 95.87782px;
-            width: 187.10631px;
-
-            background: url('@{image-path}connector.svg');
-
-            content: '';
-        }
-
-        .contact-details {
-            max-width: 50%;
+                > .container {
+                    overflow: hidden;
+                }
+            }
         }
     }
 }
