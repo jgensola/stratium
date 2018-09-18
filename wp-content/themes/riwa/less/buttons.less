@@ -25,11 +25,12 @@
         }
     }
 
-    .section {
+    .section,
+    article.not-found {
         .new-button {
             border-color: @black;
 
-            color: @black;
+            color: @black !important;
 
             &:hover {
                 color: @white !important;
@@ -69,6 +70,13 @@
             padding: 5px 12px;
 
             font-size: 20px;
+        }
+
+        .section,
+        .article.not-found {
+            .new-button {
+                font-size: 18px;
+            }
         }
     }
 }

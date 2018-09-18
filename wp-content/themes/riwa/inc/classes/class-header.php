@@ -40,16 +40,22 @@ if (!class_exists('Riwa_Header_Layouts')) {
         ?>
 
 	<!-- LOADER -->
-	<div class="loader">
-		<div class="cssload-thecube">
-			<div class="cssload-cube cssload-c1"></div>
-			<div class="cssload-cube cssload-c2"></div>
-			<div class="cssload-cube cssload-c4"></div>
-			<div class="cssload-cube cssload-c3"></div>
-		</div>
-		<div class="loading-text">
-			<?php echo esc_html($redux_ti['loader_text']); ?>
-		</div>
+	<div class="loader" style="display: block !important;">
+<!--		<div class="cssload-thecube">-->
+<!--			<div class="cssload-cube cssload-c1"></div>-->
+<!--			<div class="cssload-cube cssload-c2"></div>-->
+<!--			<div class="cssload-cube cssload-c4"></div>-->
+<!--			<div class="cssload-cube cssload-c3"></div>-->
+<!--		</div>-->
+        <div class="loader-container">
+            <div class="content">
+                <img src="<?php echo site_url() ?>/wp-content/uploads/2018/09/logo-300x60.png">
+                <img class="animation" src="<?php echo site_url() ?>/wp-content/uploads/2018/09/main-loader.gif">
+<!--                <div class="loading-text">-->
+<!--                    --><?php //echo esc_html($redux_ti['loader_text']); ?>
+<!--                </div>-->
+            </div>
+        </div>
 	</div>
 	<!--LOADER Ends-->
 	<?php    

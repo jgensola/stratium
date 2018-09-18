@@ -382,6 +382,36 @@
 .error404 p {
   font-size: 16px;
 }
+.page .loader img,
+.error404 .loader img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+}
+.page .loader .animation,
+.error404 .loader .animation {
+  width: 100px;
+  margin: 20px auto 0;
+}
+.page .loader .content,
+.error404 .loader .content {
+  text-align: center;
+}
+.page .loader-container,
+.error404 .loader-container {
+  height: 100%;
+  padding: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
 .page .contact-details a,
 .error404 .contact-details a {
   display: block;
@@ -574,7 +604,7 @@
 }
 .page .section > .vc_column-inner,
 .error404 .section > .vc_column-inner {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: auto;
   padding: 30px 15px;
 }
@@ -764,17 +794,20 @@
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border: 1px solid #969696;
+  border: 2px solid #969696;
 }
 .page .contact .wpcf7-form .wpcf7-not-valid,
 .error404 .contact .wpcf7-form .wpcf7-not-valid {
   border-color: #c34551 !important;
 }
+.page .contact .wpcf7-form .wpcf7-response-output,
+.error404 .contact .wpcf7-form .wpcf7-response-output {
+  margin: 0 0 20px !important;
+  text-align: center;
+}
 .page .contact .wpcf7-form .wpcf7-validation-errors,
 .error404 .contact .wpcf7-form .wpcf7-validation-errors {
-  margin: 0 !important;
   background: #c34551;
-  text-align: center;
 }
 .page .contact .wpcf7-form .wpcf7-mail-sent-ng,
 .error404 .contact .wpcf7-form .wpcf7-mail-sent-ng,
@@ -792,6 +825,18 @@
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+}
+.page .contact div.wpcf7 .ajax-loader,
+.error404 .contact div.wpcf7 .ajax-loader {
+  margin: auto;
+  height: 0;
+  width: 100%;
+  background: url('../images/loading.gif') center no-repeat;
+  background-size: contain;
+}
+.page .contact div.wpcf7 .ajax-loader.is-active,
+.error404 .contact div.wpcf7 .ajax-loader.is-active {
+  height: 45px;
 }
 .page.page-template-page-static-php #primary,
 .error404.page-template-page-static-php #primary,
@@ -876,6 +921,42 @@
 .page.error404 h2,
 .error404.error404 h2 {
   font-size: 50px;
+}
+.page.error404 .container,
+.error404.error404 .container {
+  width: 100%;
+}
+.page.error404 .site-main,
+.error404.error404 .site-main {
+  margin: 77px auto 0;
+}
+.page.error404 .page-content,
+.error404.error404 .page-content {
+  position: relative;
+  z-index: 2;
+}
+.page.error404 article,
+.error404.error404 article {
+  position: relative;
+  overflow: hidden;
+}
+.page.error404 article:after,
+.error404.error404 article:after {
+  display: inline-block;
+  position: absolute;
+  bottom: -79px;
+  right: -79px;
+  z-index: 1;
+  height: 285px;
+  width: 285px;
+  background: url('../images/unsatisfied.svg') no-repeat;
+  background-size: contain;
+  content: '';
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+  filter: alpha(opacity=10);
+  -webkit-opacity: 0.1;
+  -moz-opacity: 0.1;
+  opacity: 0.1;
 }
 @media only screen and (min-width: 768px) {
   .page .wrapper > .container,
@@ -1073,21 +1154,41 @@
   .page .contact input[type=reset].new-button,
   .error404 .contact input[type=reset].new-button {
     width: auto;
-    margin-right: 10px;
+    margin-left: 10px;
   }
   .page .contact .wpcf7-form .wpcf7-response-output,
   .error404 .contact .wpcf7-form .wpcf7-response-output {
-    margin-top: 20px !important;
+    margin: 20px 0 30px !important;
   }
   .page .contact .button-container,
   .error404 .contact .button-container {
-    text-align: center;
+    text-align: right;
+  }
+  .page .contact div.wpcf7 .ajax-loader,
+  .error404 .contact div.wpcf7 .ajax-loader {
+    width: 0;
+    background-position: right;
+  }
+  .page .contact div.wpcf7 .ajax-loader.is-active,
+  .error404 .contact div.wpcf7 .ajax-loader.is-active {
+    width: 52px;
+    margin-top: -5px;
+  }
+  .page .contact .wpcf7-form input[type=tel],
+  .error404 .contact .wpcf7-form input[type=tel],
+  .page .contact .wpcf7-form input[type=text],
+  .error404 .contact .wpcf7-form input[type=text],
+  .page .contact .wpcf7-form input[type=email],
+  .error404 .contact .wpcf7-form input[type=email],
+  .page .contact .wpcf7-form textarea,
+  .error404 .contact .wpcf7-form textarea {
+    margin-bottom: 20px;
   }
   .page.page-template-page-static-php .site-main,
   .error404.page-template-page-static-php .site-main,
   .page.error404 .site-main,
   .error404.error404 .site-main {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 85px auto 0;
     padding: 40px 30px;
   }
@@ -1160,19 +1261,27 @@
   background: rgba(255, 255, 255, 0.3);
 }
 .page .section .new-button,
-.error404 .section .new-button {
+.error404 .section .new-button,
+.page article.not-found .new-button,
+.error404 article.not-found .new-button {
   border-color: #000;
-  color: #000;
+  color: #000 !important;
 }
 .page .section .new-button:hover,
-.error404 .section .new-button:hover {
+.error404 .section .new-button:hover,
+.page article.not-found .new-button:hover,
+.error404 article.not-found .new-button:hover {
   color: #fff !important;
   background: #000 !important;
 }
 .page .section input[type=submit].new-button,
 .error404 .section input[type=submit].new-button,
+.page article.not-found input[type=submit].new-button,
+.error404 article.not-found input[type=submit].new-button,
 .page .section input[type=reset].new-button,
-.error404 .section input[type=reset].new-button {
+.error404 .section input[type=reset].new-button,
+.page article.not-found input[type=reset].new-button,
+.error404 article.not-found input[type=reset].new-button {
   border: 2px solid #000;
   outline: none !important;
   background: transparent;
@@ -1210,6 +1319,12 @@
   .error404 .new-button {
     padding: 5px 12px;
     font-size: 20px;
+  }
+  .page .section .new-button,
+  .error404 .section .new-button,
+  .page .article.not-found .new-button,
+  .error404 .article.not-found .new-button {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=stratium.css.map */

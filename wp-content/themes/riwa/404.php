@@ -12,8 +12,9 @@ get_header('static'); ?>
 				<div class="page-content">
 					<h2 class="page-title">Oops!</h2>
                     <h3>Error Code: 404</h3>
-                    <p>The page you were looking for appears to have been moved, deleted, or does not exist. Click <a title="Homepage" href="<?php echo site_url() ?>">here</a> to go back to the homepage.</p><br />
-				</div><!-- .page-content -->
+                    <p>The page you were looking for appears to have been moved, deleted, or does not exist.</p><br />
+				    <a title="Go back to the Homepage" class="new-button" href="<?php echo site_url()?>">Go back to the Homepage</a>
+                </div><!-- .page-content -->
 			</article><!-- .error-404 -->
 
 		</main><!-- .site-main -->
