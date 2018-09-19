@@ -1,6 +1,11 @@
 .page #main-navigation #navigation,
 .error404 #main-navigation #navigation {
   z-index: 200;
+  left: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 .page #main-navigation #navigation .container-fluid,
 .error404 #main-navigation #navigation .container-fluid {
@@ -57,6 +62,10 @@
   -ms-order: 1;
   order: 1;
 }
+.page #main-navigation #navigation.affix,
+.error404 #main-navigation #navigation.affix {
+  background: #202020;
+}
 .page #main-navigation #navigation.affix .row,
 .error404 #main-navigation #navigation.affix .row {
   background: #202020;
@@ -72,7 +81,7 @@
 .page .pushmenu,
 .error404 .pushmenu {
   padding: 5px 15px 20px;
-  background: #4d4d4d;
+  background: #333333;
 }
 .page .pushmenu div,
 .error404 .pushmenu div {
@@ -122,11 +131,16 @@
 }
 .page.pushmenu-push-toleft,
 .error404.pushmenu-push-toleft {
-  overflow: hidden;
+  overflow: hidden !important;
+  position: relative;
 }
 .page.pushmenu-push-toleft .dark-screen,
 .error404.pushmenu-push-toleft .dark-screen {
   display: block;
+}
+.page.pushmenu-push-toleft #main-navigation #navigation,
+.error404.pushmenu-push-toleft #main-navigation #navigation {
+  left: -270px;
 }
 .page .dark-screen,
 .error404 .dark-screen {
@@ -234,6 +248,10 @@
   .page.pushmenu-push-toleft .dark-screen,
   .error404.pushmenu-push-toleft .dark-screen {
     display: none;
+  }
+  .page.pushmenu-push-toleft #main-navigation #navigation,
+  .error404.pushmenu-push-toleft #main-navigation #navigation {
+    left: 0;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -377,6 +395,9 @@
   .error404.error404 footer.dark > .container {
     overflow: hidden;
   }
+}
+html {
+  position: relative;
 }
 .page p,
 .error404 p {
@@ -809,6 +830,10 @@
 .error404 .contact .wpcf7-form .wpcf7-validation-errors {
   background: #c34551;
 }
+.page .contact .wpcf7-form .wpcf7-mail-sent-ok,
+.error404 .contact .wpcf7-form .wpcf7-mail-sent-ok {
+  background: #45a6c3;
+}
 .page .contact .wpcf7-form .wpcf7-mail-sent-ng,
 .error404 .contact .wpcf7-form .wpcf7-mail-sent-ng,
 .page .contact .wpcf7-form .wpcf7-aborted,
@@ -872,6 +897,12 @@
 .page.error404 li,
 .error404.error404 li {
   margin: 10px 0 0 10px;
+}
+.page.page-template-page-static-php li.menu-item,
+.error404.page-template-page-static-php li.menu-item,
+.page.error404 li.menu-item,
+.error404.error404 li.menu-item {
+  margin: 0;
 }
 .page.page-template-page-static-php article,
 .error404.page-template-page-static-php article,
@@ -1250,7 +1281,7 @@
   display: inline-block;
   border: 2px solid #fff;
   border-radius: 0;
-  padding: 2px 8px;
+  padding: 6px 8px;
   color: #fff;
   text-transform: uppercase;
   text-align: center;

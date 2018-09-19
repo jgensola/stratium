@@ -1,3 +1,7 @@
+html {
+    position: relative;
+}
+
 @{stratium-pages} {
     p {
         font-size: 16px;
@@ -450,6 +454,10 @@
                 background: @fuzzy-wuzzy-brown;
             }
 
+            .wpcf7-mail-sent-ok {
+                background: @pelorous;
+            }
+
             .wpcf7-mail-sent-ng,
             .wpcf7-aborted {
                 margin: 0;
@@ -511,6 +519,10 @@
 
         li {
             margin: 10px 0 0 10px;
+
+            &.menu-item {
+                margin: 0;
+            }
         }
 
         article {

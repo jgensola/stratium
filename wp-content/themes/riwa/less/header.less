@@ -1,6 +1,9 @@
 @{stratium-pages} {
     #main-navigation #navigation {
         z-index: 200;
+        left: 0;
+
+        .transition(all .4s);
 
         .container-fluid {
             padding: 0;
@@ -47,6 +50,8 @@
         }
 
         &.affix {
+            background: @mine-shaft;
+
             .row {
                 background: @mine-shaft;
             }
@@ -64,7 +69,7 @@
     .pushmenu {
         padding: 5px 15px 20px;
 
-        background: lighten(@black, 30%);
+        background: lighten(@black, 20%);
 
         div {
             display: none;
@@ -112,10 +117,15 @@
     }
 
     &.pushmenu-push-toleft {
-        overflow: hidden;
+        overflow: hidden !important;
+        position: relative;
 
         .dark-screen {
             display: block;
+        }
+
+        #main-navigation #navigation {
+            left: -270px;
         }
     }
 
@@ -231,6 +241,10 @@
 
             .dark-screen {
                 display: none;
+            }
+
+            #main-navigation #navigation {
+                left: 0;
             }
         }
     }

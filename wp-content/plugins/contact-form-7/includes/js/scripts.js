@@ -239,6 +239,10 @@
 			detail.status = data.status;
 			detail.apiResponse = data;
 
+            $('html, body').animate({
+                scrollTop: $('#contact').offset().top
+            }, 700);
+
 			var $message = $( '.wpcf7-response-output', $form );
 
 			switch ( data.status ) {
