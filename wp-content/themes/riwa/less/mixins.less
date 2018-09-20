@@ -2,8 +2,8 @@
 // flex or inline-flex
 .flex-display(@display: flex) {
     display: ~"-webkit-@{display}";
-    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
-    display: ~"-ms-@{display}"; // IE11
+    display: ~"-ms-@{display}box";  // IE10 uses -ms-flexbox
+    display: ~"-ms-@{display}";     // IE11
     display: @display;
 }
 
@@ -11,9 +11,9 @@
 // - applies to: flex items
 // <positive-number>, initial, auto, or none
 .flex(@columns: initial) {
-    -webkit-flex: @columns;
-    -ms-flex: @columns;
-    flex: @columns;
+    -webkit-flex:   @columns;
+    -ms-flex:       @columns;
+    flex:           @columns;
 }
 
 // Flex Flow Direction
@@ -21,53 +21,53 @@
 // row | row-reverse | column | column-reverse
 .flex-direction(@direction) {
     -webkit-flex-direction: @direction;
-    -ms-flex-direction: @direction;
-    flex-direction: @direction;
+    -ms-flex-direction:     @direction;
+    flex-direction:         @direction;
 }
 
 // Flex Line Wrapping
 // - applies to: flex containers
 // nowrap | wrap | wrap-reverse
 .flex-wrap(@wrap: nowrap) {
-    -webkit-flex-wrap: @wrap;
-    -ms-flex-wrap: @wrap;
-    flex-wrap: @wrap;
+    -webkit-flex-wrap:  @wrap;
+    -ms-flex-wrap:      @wrap;
+    flex-wrap:          @wrap;
 }
 
 // Flex Direction and Wrap
 // - applies to: flex containers
 // <flex-direction> || <flex-wrap>
 .flex-flow(@flow) {
-    -webkit-flex-flow: @flow;
-    -ms-flex-flow: @flow;
-    flex-flow: @flow;
+    -webkit-flex-flow:  @flow;
+    -ms-flex-flow:      @flow;
+    flex-flow:          @flow;
 }
 
 // Display Order
 // - applies to: flex items
 // <integer>
 .flex-order(@order: 0) {
-    -webkit-order: @order;
-    -ms-order: @order;
-    order: @order;
+    -webkit-order:  @order;
+    -ms-order:      @order;
+    order:          @order;
 }
 
 // Flex grow factor
 // - applies to: flex items
 // <number>
 .flex-grow(@grow: 0) {
-    -webkit-flex-grow: @grow;
-    -ms-flex-grow: @grow;
-    flex-grow: @grow;
+    -webkit-flex-grow:  @grow;
+    -ms-flex-grow:      @grow;
+    flex-grow:          @grow;
 }
 
 // Flex shrink
 // - applies to: flex item shrink factor
 // <number>
 .flex-shrink(@shrink: 1) {
-    -webkit-flex-shrink: @shrink;
-    -ms-flex-shrink: @shrink;
-    flex-shrink: @shrink;
+    -webkit-flex-shrink:    @shrink;
+    -ms-flex-shrink:        @shrink;
+    flex-shrink:            @shrink;
 }
 
 // Flex basis
@@ -76,35 +76,35 @@
 // <width>
 .flex-basis(@width: auto) {
     -webkit-flex-basis: @width;
-    -ms-flex-basis: @width;
-    flex-basis: @width;
+    -ms-flex-basis:     @width;
+    flex-basis:         @width;
 }
 
 // Axis Alignment
 // - applies to: flex containers
 // flex-start | flex-end | center | space-between | space-around
 .justify-content(@justify) {
-    -webkit-justify-content: @justify;
-    -ms-justify-content: @justify;
-    justify-content: @justify;
+    -webkit-justify-content:    @justify;
+    -ms-justify-content:        @justify;
+    justify-content:            @justify;
 }
 
 // Packing Flex Lines
 // - applies to: multi-line flex containers
 // flex-start | flex-end | center | space-between | space-around | stretch
 .align-content(@align: stretch) {
-    -webkit-align-content: @align;
-    -ms-align-content: @align;
-    align-content: @align;
+    -webkit-align-content:  @align;
+    -ms-align-content:      @align;
+    align-content:          @align;
 }
 
 // Cross-axis Alignment
 // - applies to: flex containers
 // flex-start | flex-end | center | baseline | stretch
 .align-items(@align) {
-    -webkit-align-items: @align;
-    -ms-align-items: @align;
-    align-items: @align;
+    -webkit-align-items:    @align;
+    -ms-align-items:        @align;
+    align-items:            @align;
 }
 
 // Cross-axis Alignment
@@ -112,32 +112,32 @@
 // auto | flex-start | flex-end | center | baseline | stretch
 .align-self(@align: auto) {
     -webkit-align-self: @align;
-    -ms-align-self: @align;
-    align-self: @align;
+    -ms-align-self:     @align;
+    align-self:         @align;
 }
 
 // Transition
 .transition (@transition) {
     -webkit-transition: @transition;
-    -moz-transition: @transition;
-    -ms-transition: @transition;
-    -o-transition: @transition;
+    -moz-transition:    @transition;
+    -ms-transition:     @transition;
+    -o-transition:      @transition;
 }
 
 // Transform
 .transform (@transform) {
-    -webkit-transform: @transform;
-    -moz-transform: @transform;
-    -o-transform: @transform;
-    -ms-transform: @transform;
+    -webkit-transform:      @transform;
+    -moz-transform:         @transform;
+    -o-transform:           @transform;
+    -ms-transform:          @transform;
     -webkit-font-smoothing: antialiased;
 }
 
 // Animation
 .animation (@animation) {
-    -webkit-animation: @animation;
-    -moz-animation: @animation;
-    animation: @animation;
+    -webkit-animation:  @animation;
+    -moz-animation:     @animation;
+    animation:          @animation;
 }
 
 // Key Frames
@@ -166,73 +166,73 @@
 
 // Animation Timing Function
 .animation-timing-function (@values) {
-    -webkit-animation-timing-function: @values;
-    -moz-animation-timing-function: @values;
-    -o-animation-timing-function: @values;
-    animation-timing-function: @values;
+    -webkit-animation-timing-function:  @values;
+    -moz-animation-timing-function:     @values;
+    -o-animation-timing-function:       @values;
+    animation-timing-function:          @values;
 }
 
 // Opacity
 .opacity (@opacity) {
-    @mfopacity: @opacity*100;
-    @fopacity: "alpha(opacity=@{mfopacity})";
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{mfopacity})";
-    filter: ~"@{fopacity}";
-    -webkit-opacity: @opacity;
-    -moz-opacity: @opacity;
-    opacity: @opacity;
+    @mfopacity:         @opacity*100;
+    @fopacity:          "alpha(opacity=@{mfopacity})";
+    -ms-filter:         "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{mfopacity})";
+    filter:             ~"@{fopacity}";
+    -webkit-opacity:    @opacity;
+    -moz-opacity:       @opacity;
+    opacity:            @opacity;
 }
 
 //Border Radius
 .border-radius (@radius) {
-    -webkit-border-radius: @radius;
-    -moz-border-radius: @radius;
-    border-radius: @radius;
+    -webkit-border-radius:  @radius;
+    -moz-border-radius:     @radius;
+    border-radius:          @radius;
 
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
+    -moz-background-clip:       padding;
+    -webkit-background-clip:    padding-box;
+    background-clip:            padding-box;
 }
 
 //Blur
 .blur (@blur) {
     -webkit-filter: blur(@blur);
-    -moz-filter: blur(@blur);
-    -o-filter: blur(@blur);
-    -ms-filter: blur(@blur);
-    filter: blur(@blur);
+    -moz-filter:    blur(@blur);
+    -o-filter:      blur(@blur);
+    -ms-filter:     blur(@blur);
+    filter:         blur(@blur);
 }
 
 //Brightness
 .brightness (@brightness) {
     -webkit-filter: brightness(@brightness);
-    -moz-filter: brightness(@brightness);
-    -o-filter: brightness(@brightness);
-    -ms-filter: brightness(@brightness);
-    filter: brightness(@brightness);
+    -moz-filter:    brightness(@brightness);
+    -o-filter:      brightness(@brightness);
+    -ms-filter:     brightness(@brightness);
+    filter:         brightness(@brightness);
 }
 
 //Filter
 .filter (@filter) {
     -webkit-filter: @filter;
-    -moz-filter: @filter;
-    -o-filter: @filter;
-    -ms-filter: @filter;
-    filter: @filter;
+    -moz-filter:    @filter;
+    -o-filter:      @filter;
+    -ms-filter:     @filter;
+    filter:         @filter;
 }
 
 //Border Box
 .border-box() {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    box-sizing:         border-box;
 }
 
 //Box Shadow {
 .box-shadow (@string) {
     -webkit-box-shadow: @string;
-    -moz-box-shadow: @string;
-    box-shadow: @string;
+    -moz-box-shadow:    @string;
+    box-shadow:         @string;
 }
 
 //Max Content
@@ -253,14 +253,14 @@
 //Appearance
 .appearance (@value) {
     -webkit-appearance: @value;
-    -moz-appearance: @value;
-    appearance: @value;
+    -moz-appearance:    @value;
+    appearance:         @value;
 }
 
 //User Select
 .user-select (@value){
-    -webkit-user-select: @value; /* Chrome 49+ */
-    -moz-user-select: @value; /* Firefox 43+ */
-    -ms-user-select: @value; /* No support yet */
-    user-select: @value; /* Likely future */
+    -webkit-user-select:    @value; /* Chrome 49+ */
+    -moz-user-select:       @value; /* Firefox 43+ */
+    -ms-user-select:        @value; /* No support yet */
+    user-select:            @value; /* Likely future */
 }

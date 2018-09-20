@@ -150,12 +150,12 @@
   width: 100%;
   height: 100%;
   background: #000;
+  cursor: pointer;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
   -webkit-opacity: 0.2;
   -moz-opacity: 0.2;
   opacity: 0.2;
-  cursor: pointer;
 }
 .page.page-template-page-static-php #main-navigation #navigation.affix-top,
 .error404.page-template-page-static-php #main-navigation #navigation.affix-top,
@@ -366,7 +366,7 @@
     width: 500%;
     height: 236px;
     background-image: url('../images/world-footer.svg');
-    background-repeat-x: no-repeat;
+    background-repeat: no-repeat;
     background-position-x: -3307px;
     background-position-y: -1964px;
     background-size: 4900px;
@@ -1156,15 +1156,16 @@ html {
 }
 .page .contact div.wpcf7 .ajax-loader,
 .error404 .contact div.wpcf7 .ajax-loader {
-  margin: auto;
-  height: 0;
+  display: none;
+  margin: 0 auto -15px;
+  height: 45px;
   width: 100%;
   background: url('../images/loading.gif') center no-repeat;
   background-size: contain;
 }
 .page .contact div.wpcf7 .ajax-loader.is-active,
 .error404 .contact div.wpcf7 .ajax-loader.is-active {
-  height: 45px;
+  display: inline-block;
 }
 .page.page-template-page-static-php #primary,
 .error404.page-template-page-static-php #primary,
@@ -1505,6 +1506,7 @@ html {
   .page .contact div.wpcf7 .ajax-loader,
   .error404 .contact div.wpcf7 .ajax-loader {
     width: 0;
+    margin-bottom: 0;
     background-position: right;
   }
   .page .contact div.wpcf7 .ajax-loader.is-active,

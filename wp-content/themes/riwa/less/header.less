@@ -139,19 +139,18 @@
 
         background: @black;
 
-        .opacity(.2);
-
         cursor: pointer;
+
+        .opacity(.2);
     }
 
     // Static Pages
     &.page-template-page-static-php,
     &.error404 {
-        #main-navigation #navigation {
-            &.affix-top {
-                background: @mine-shaft;
-            }
+        #main-navigation #navigation.affix-top {
+            background: @mine-shaft;
         }
+
     }
 }
 
@@ -200,33 +199,27 @@
                 padding: 0;
             }
 
-            .navbar-default {
-                .navbar-nav > li {
-                    > a {
-                        border-bottom: 4px solid transparent;
-                        margin-top: 25px;
+            .navbar-default .navbar-nav > li {
+                > a {
+                    border-bottom: 4px solid transparent;
+                    margin-top: 25px;
 
-                        text-transform: none;
-                    }
+                    text-transform: none;
+                }
 
-                    &.active > a {
-                        border-bottom-color: @pelorous;
-                    }
+                &.active > a {
+                    border-bottom-color: @pelorous;
+                }
 
-                    &:last-of-type > a {
-                        margin-right: 0;
-                    }
+                &:last-of-type > a {
+                    margin-right: 0;
                 }
             }
 
-            &.affix {
-                .navbar-nav > li {
-                    > a {
-                        margin-top: 15px;
+            &.affix .navbar-nav > li > a {
+                margin-top: 15px;
 
-                        color: @white;
-                    }
-                }
+                color: @white;
             }
         }
 

@@ -44,8 +44,12 @@ if (!class_exists('Riwa_Header_Layouts')) {
         <div class="loader-container">
             <div class="content">
                 <img src="<?php echo site_url() ?>/wp-content/themes/riwa/images/logo.svg">
-<!--                <img class="animation" src="--><?php //echo site_url() ?><!--/wp-content/uploads/2018/09/main-loader.gif">-->
-                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                <div class="lds-ellipsis">
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                </div>
             </div>
         </div>
 	</div>

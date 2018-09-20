@@ -75,32 +75,23 @@ html {
             }
         }
 
-        .keyframes(lds-ellipsis1, {
-            0% {
-                .transform(scale(0));
-            }
-            100% {
-                .transform(scale(1));
-            }
-        });
+        .keyframes(lds-ellipsis1, { 0% {
+            .transform(scale(0));
+        } 100% {
+              .transform(scale(1));
+          } });
 
-        .keyframes(lds-ellipsis3, {
-            0% {
-                .transform(scale(1));
-            }
-            100% {
-                .transform(scale(0));
-            }
-        });
+        .keyframes(lds-ellipsis3, { 0% {
+            .transform(scale(1));
+        } 100% {
+              .transform(scale(0));
+          } });
 
-        .keyframes(lds-ellipsis2, {
-            0% {
-                .transform(translate(0, 0));
-            }
-            100% {
-                .transform(translate(19px, 0));
-            }
-        });
+        .keyframes(lds-ellipsis2, { 0% {
+            .transform(translate(0, 0));
+        } 100% {
+              .transform(translate(19px, 0));
+          } });
     }
 
     .contact-details {
@@ -542,20 +533,18 @@ html {
             }
         }
 
-
-
         div.wpcf7 .ajax-loader {
-            //display: none;
+            display: none;
 
-            margin: auto;
-            height: 0;
+            margin: 0 auto -15px;
+            height: 45px;
             width: 100%;
 
             background: url('@{image-path}loading.gif') center no-repeat;
             background-size: contain;
 
             &.is-active {
-                height: 45px;
+                display: inline-block;
             }
         }
     }
@@ -754,13 +743,11 @@ html {
                 .stratium-erp,
                 .app-development {
                     border-right: 10px solid @concrete;
-                    //min-height: 322px;
                 }
 
                 .business-cloud,
                 .consulting {
                     border-left: 10px solid @concrete;
-                    //min-height: 322px;
                 }
             }
         }
@@ -841,7 +828,6 @@ html {
             }
 
             form {
-                //max-width: 768px;
                 margin: auto;
             }
 
@@ -874,10 +860,8 @@ html {
                 margin-left: 10px;
             }
 
-            .wpcf7-form {
-                .wpcf7-response-output {
-                    margin: 20px 0 30px !important;
-                }
+            .wpcf7-form .wpcf7-response-output {
+                margin: 20px 0 30px !important;
             }
 
             .button-container {
@@ -886,6 +870,7 @@ html {
 
             div.wpcf7 .ajax-loader {
                 width: 0;
+                margin-bottom: 0;
 
                 background-position: right;
 
@@ -907,7 +892,7 @@ html {
 
         // Static Pages
         &.page-template-page-static-php,
-        &.error404{
+        &.error404 {
             .site-main {
                 max-width: @page-max-width;
                 margin: 85px auto 0;
