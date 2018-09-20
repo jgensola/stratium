@@ -40,7 +40,7 @@ if (!class_exists('Riwa_Header_Layouts')) {
         ?>
 
 	<!-- LOADER -->
-	<div class="loader" style="display: block !important;">
+	<div class="loader" style="display: block;">
         <div class="loader-container">
             <div class="content">
                 <img src="<?php echo site_url() ?>/wp-content/themes/riwa/images/logo.svg">

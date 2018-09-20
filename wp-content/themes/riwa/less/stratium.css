@@ -1119,6 +1119,7 @@ html {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 2px solid #969696;
+  font-size: 16px;
 }
 .page .contact .wpcf7-form .wpcf7-not-valid,
 .error404 .contact .wpcf7-form .wpcf7-not-valid {
@@ -1523,6 +1524,7 @@ html {
   .page .contact .wpcf7-form textarea,
   .error404 .contact .wpcf7-form textarea {
     margin-bottom: 20px;
+    font-size: 14px;
   }
   .page.page-template-page-static-php .site-main,
   .error404.page-template-page-static-php .site-main,
@@ -1573,13 +1575,6 @@ html {
   .error404 .about > .vc_column-inner > .wpb_wrapper {
     width: 70%;
   }
-}
-.ie-11 .loader,
-.ie-10 .loader,
-.ie-9 .loader,
-.ie-8 .loader,
-.ie-7 .loader {
-  visibility: hidden;
 }
 .page a,
 .error404 a {
