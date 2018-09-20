@@ -25,8 +25,6 @@ jQuery(function ($) {
 	new WOW().init();
     
     jQuery("#wpadminbar").addClass("adminbar");
-   
-  
 		
     // // scrolling animation
 

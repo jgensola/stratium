@@ -50,7 +50,7 @@ function wpcf7_enqueue_scripts() {
 	}
 
 	wp_enqueue_script( 'contact-form-7',
-		wpcf7_plugin_url( 'includes/js/scripts.js' ),
+		wpcf7_plugin_url( 'includes/js/scripts.min.js' ),
 		array( 'jquery' ), WPCF7_VERSION, $in_footer );
 
 	$wpcf7 = array(

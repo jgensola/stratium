@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/js/scripts.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/countTo.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/functions.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/jquery.appear.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/jquery.dlmenu.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/jquery.fancybox-media.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/jquery.fancybox.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/skip-link-focus-fix.min.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/contact-form-7/includes/js/scripts.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/countTo.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/functions.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/jquery.appear.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/jquery.dlmenu.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/jquery.fancybox-media.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/jquery.fancybox.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/skip-link-focus-fix.min.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
