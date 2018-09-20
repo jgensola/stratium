@@ -133,6 +133,45 @@
     -webkit-font-smoothing: antialiased;
 }
 
+// Animation
+.animation (@animation) {
+    -webkit-animation: @animation;
+    -moz-animation: @animation;
+    animation: @animation;
+}
+
+// Key Frames
+.keyframes (@name,@rules) {
+
+    @-webkit-keyframes @name {
+        @rules();
+    }
+
+    @-moz-keyframes @name {
+        @rules();
+    }
+
+    @-ms-keyframes @name {
+        @rules();
+    }
+
+    @-o-keyframes @name {
+        @rules();
+    }
+
+    @keyframes @name {
+        @rules();
+    }
+}
+
+// Animation Timing Function
+.animation-timing-function (@values) {
+    -webkit-animation-timing-function: @values;
+    -moz-animation-timing-function: @values;
+    -o-animation-timing-function: @values;
+    animation-timing-function: @values;
+}
+
 // Opacity
 .opacity (@opacity) {
     @mfopacity: @opacity*100;

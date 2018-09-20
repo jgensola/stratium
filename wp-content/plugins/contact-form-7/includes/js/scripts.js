@@ -257,6 +257,7 @@
 
 					$message.addClass( 'wpcf7-validation-errors' );
 					$form.addClass( 'invalid' );
+					$form.addClass( 'invalid' );
 
 					wpcf7.triggerEvent( data.into, 'invalid', detail );
 					break;
