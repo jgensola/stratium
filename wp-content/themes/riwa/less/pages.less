@@ -343,7 +343,17 @@ html {
 
             background-color: @white !important;
 
-            &:after {
+            .main-text {
+                position: relative;
+                z-index: 2;
+
+                height: 100%;
+
+                .flex-display();
+                .flex-direction(column);
+            }
+
+            .bg-image {
                 position: absolute;
                 z-index: 1;
                 display: block;
@@ -356,7 +366,7 @@ html {
                 content: '';
             }
 
-            &.stratium-erp:after {
+            &.stratium-erp .bg-image {
                 bottom: -80px;
                 right: -60px;
 
@@ -364,7 +374,7 @@ html {
                 background-size: 260px;
             }
 
-            &.business-cloud:after {
+            &.business-cloud .bg-image {
                 bottom: -44px;
                 right: -130px;
 
@@ -372,7 +382,7 @@ html {
                 background-size: 329px;
             }
 
-            &.app-development:after {
+            &.app-development .bg-image {
                 bottom: -54px;
                 right: -99px;
 
@@ -380,7 +390,7 @@ html {
                 background-size: 297px;
             }
 
-            &.consulting:after {
+            &.consulting .bg-image {
                 bottom: -68px;
                 right: -36px;
 
@@ -953,6 +963,20 @@ html {
                     width: 70%;
                 }
             }
+        }
+    }
+}
+
+// IE
+.ie-11,
+.ie-10,
+.ie-9,
+.ie-8,
+.ie-7 {
+    @{stratium-pages} {
+        // Services
+        .services .vc_inner .wpb_content_element .main-text {
+            display: block;
         }
     }
 }

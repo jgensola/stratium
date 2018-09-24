@@ -344,6 +344,10 @@
     margin-top: -65px;
     text-align: right;
   }
+  .page footer.dark .copyright p,
+  .error404 footer.dark .copyright p {
+    margin-top: 0;
+  }
   .page footer.dark .widget_text,
   .error404 footer.dark .widget_text {
     position: relative;
@@ -975,8 +979,21 @@ html {
   margin-top: 20px;
   background-color: #fff !important;
 }
-.page .services .vc_inner .wpb_content_element:after,
-.error404 .services .vc_inner .wpb_content_element:after {
+.page .services .vc_inner .wpb_content_element .main-text,
+.error404 .services .vc_inner .wpb_content_element .main-text {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.page .services .vc_inner .wpb_content_element .bg-image,
+.error404 .services .vc_inner .wpb_content_element .bg-image {
   position: absolute;
   z-index: 1;
   display: block;
@@ -985,29 +1002,29 @@ html {
   background: no-repeat bottom right;
   content: '';
 }
-.page .services .vc_inner .wpb_content_element.stratium-erp:after,
-.error404 .services .vc_inner .wpb_content_element.stratium-erp:after {
+.page .services .vc_inner .wpb_content_element.stratium-erp .bg-image,
+.error404 .services .vc_inner .wpb_content_element.stratium-erp .bg-image {
   bottom: -80px;
   right: -60px;
   background-image: url('../images/services/services_erp.svg') !important;
   background-size: 260px;
 }
-.page .services .vc_inner .wpb_content_element.business-cloud:after,
-.error404 .services .vc_inner .wpb_content_element.business-cloud:after {
+.page .services .vc_inner .wpb_content_element.business-cloud .bg-image,
+.error404 .services .vc_inner .wpb_content_element.business-cloud .bg-image {
   bottom: -44px;
   right: -130px;
   background-image: url('../images/services/services_businesscloud.svg') !important;
   background-size: 329px;
 }
-.page .services .vc_inner .wpb_content_element.app-development:after,
-.error404 .services .vc_inner .wpb_content_element.app-development:after {
+.page .services .vc_inner .wpb_content_element.app-development .bg-image,
+.error404 .services .vc_inner .wpb_content_element.app-development .bg-image {
   bottom: -54px;
   right: -99px;
   background-image: url('../images/services/services_appdev.svg') !important;
   background-size: 297px;
 }
-.page .services .vc_inner .wpb_content_element.consulting:after,
-.error404 .services .vc_inner .wpb_content_element.consulting:after {
+.page .services .vc_inner .wpb_content_element.consulting .bg-image,
+.error404 .services .vc_inner .wpb_content_element.consulting .bg-image {
   bottom: -68px;
   right: -36px;
   background-image: url('../images/services/services_consulting.svg') !important;
@@ -1575,6 +1592,18 @@ html {
   .error404 .about > .vc_column-inner > .wpb_wrapper {
     width: 70%;
   }
+}
+.ie-11 .page .services .vc_inner .wpb_content_element .main-text,
+.ie-10 .page .services .vc_inner .wpb_content_element .main-text,
+.ie-9 .page .services .vc_inner .wpb_content_element .main-text,
+.ie-8 .page .services .vc_inner .wpb_content_element .main-text,
+.ie-7 .page .services .vc_inner .wpb_content_element .main-text,
+.ie-11 .error404 .services .vc_inner .wpb_content_element .main-text,
+.ie-10 .error404 .services .vc_inner .wpb_content_element .main-text,
+.ie-9 .error404 .services .vc_inner .wpb_content_element .main-text,
+.ie-8 .error404 .services .vc_inner .wpb_content_element .main-text,
+.ie-7 .error404 .services .vc_inner .wpb_content_element .main-text {
+  display: block;
 }
 .page a,
 .error404 a {

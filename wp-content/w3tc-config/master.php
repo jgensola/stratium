@@ -220,7 +220,7 @@
     "minify.configuration_overloaded": false,
     "minify.enabled": "1",
     "minify.auto": "0",
-    "minify.debug": false,
+    "minify.debug": "0",
     "minify.engine": "file",
     "minify.error.notification": "",
     "minify.file.gc": 86400,
