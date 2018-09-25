@@ -81,6 +81,25 @@ strong {
         margin-bottom: 0;
     }
 
+    article ul {
+        margin-left: 5px;
+
+        li {
+            list-style: none;
+
+            &:before {
+                position: absolute;
+                display: block;
+
+                margin: 3px 0 0 -15px;
+
+                font-family: @secondary-font;
+
+                content: @bullet;
+            }
+        }
+    }
+
     // Slideshow
     #slider {
         position: relative;
@@ -897,6 +916,21 @@ strong {
         // Services
         .services .vc_inner .wpb_content_element .main-text {
             display: block;
+        }
+
+        // Contact
+        .contact {
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea {
+                padding: 6px 12px;
+            }
+        }
+
+        // Static Pages
+        &.page-template-page-static-php {
+
         }
     }
 }

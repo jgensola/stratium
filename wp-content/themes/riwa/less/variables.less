@@ -2,8 +2,9 @@
 @image-path: '../images/';
 
 @icon-font: 'fontawesome';
-@primary-font: 'Titillium Web', sans-serif;
-@primary-font-bold: 'Titillium Web Bold', sans-serif;
+@secondary-font: sans-serif;
+@primary-font: 'Titillium Web', @secondary-font;
+@primary-font-bold: 'Titillium Web Bold', @secondary-font;
 
 @fuzzy-wuzzy-brown: #c34551;
 @pelorous: #45a6c3;
@@ -33,5 +34,6 @@
 @icon-phone: '\f095';
 @icon-envelope: '\f0e0';
 @quote-left: '\f10d';
+@bullet: '\2022';
 
 @stratium-pages: .page, .error404;

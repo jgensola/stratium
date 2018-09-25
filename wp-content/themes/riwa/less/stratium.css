@@ -377,15 +377,12 @@
     display: block;
     position: absolute;
     top: -30px;
-    left: -870px;
+    left: -1125px;
     z-index: 1;
     width: 500%;
-    height: 236px;
-    background-image: url('../images/world-footer.svg');
-    background-repeat: no-repeat;
-    background-position-x: -3307px;
-    background-position-y: -1964px;
-    background-size: 4900px;
+    height: 256px;
+    background: url('../images/world-footer-cropped.svg') no-repeat;
+    background-size: 77%;
     content: '';
   }
   .page footer.dark .textwidget:before,
@@ -394,9 +391,9 @@
     left: -200px;
     top: 12px;
     display: block;
-    height: 95.87782px;
+    height: 115px;
     width: 187.10631px;
-    background: url('../images/connector.svg');
+    background: url('../images/connector.svg') no-repeat;
     content: '';
   }
   .page footer.dark .contact-details,
@@ -497,6 +494,22 @@ strong {
 .page .wpb_content_element,
 .error404 .wpb_content_element {
   margin-bottom: 0;
+}
+.page article ul,
+.error404 article ul {
+  margin-left: 5px;
+}
+.page article ul li,
+.error404 article ul li {
+  list-style: none;
+}
+.page article ul li:before,
+.error404 article ul li:before {
+  position: absolute;
+  display: block;
+  margin: 3px 0 0 -15px;
+  font-family: sans-serif;
+  content: '\2022';
 }
 .page #slider,
 .error404 #slider {
@@ -1306,6 +1319,48 @@ strong {
 .ie-8 .error404 .services .vc_inner .wpb_content_element .main-text,
 .ie-7 .error404 .services .vc_inner .wpb_content_element .main-text {
   display: block;
+}
+.ie-11 .page .contact input[type="text"],
+.ie-10 .page .contact input[type="text"],
+.ie-9 .page .contact input[type="text"],
+.ie-8 .page .contact input[type="text"],
+.ie-7 .page .contact input[type="text"],
+.ie-11 .error404 .contact input[type="text"],
+.ie-10 .error404 .contact input[type="text"],
+.ie-9 .error404 .contact input[type="text"],
+.ie-8 .error404 .contact input[type="text"],
+.ie-7 .error404 .contact input[type="text"],
+.ie-11 .page .contact input[type="email"],
+.ie-10 .page .contact input[type="email"],
+.ie-9 .page .contact input[type="email"],
+.ie-8 .page .contact input[type="email"],
+.ie-7 .page .contact input[type="email"],
+.ie-11 .error404 .contact input[type="email"],
+.ie-10 .error404 .contact input[type="email"],
+.ie-9 .error404 .contact input[type="email"],
+.ie-8 .error404 .contact input[type="email"],
+.ie-7 .error404 .contact input[type="email"],
+.ie-11 .page .contact input[type="tel"],
+.ie-10 .page .contact input[type="tel"],
+.ie-9 .page .contact input[type="tel"],
+.ie-8 .page .contact input[type="tel"],
+.ie-7 .page .contact input[type="tel"],
+.ie-11 .error404 .contact input[type="tel"],
+.ie-10 .error404 .contact input[type="tel"],
+.ie-9 .error404 .contact input[type="tel"],
+.ie-8 .error404 .contact input[type="tel"],
+.ie-7 .error404 .contact input[type="tel"],
+.ie-11 .page .contact textarea,
+.ie-10 .page .contact textarea,
+.ie-9 .page .contact textarea,
+.ie-8 .page .contact textarea,
+.ie-7 .page .contact textarea,
+.ie-11 .error404 .contact textarea,
+.ie-10 .error404 .contact textarea,
+.ie-9 .error404 .contact textarea,
+.ie-8 .error404 .contact textarea,
+.ie-7 .error404 .contact textarea {
+  padding: 6px 12px;
 }
 .page a,
 .error404 a {
