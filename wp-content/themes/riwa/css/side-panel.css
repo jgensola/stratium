@@ -80,16 +80,6 @@
 }
 
 /*this is the nav*/
-.pushmenu-push{
-  overflow-x: hidden;
-  position: relative;
-  left: 0;
-	-moz-transition:all .4s ease;
-	-ms-transition:all .4s ease;
-	-o-transition:all .4s ease;
-	-webkit-transition:all .4s ease;
-  transition:all .4s ease;
-}
 .pushmenu{ 
   background: #000;
   color: #fff;
@@ -123,7 +113,7 @@
   right: 0;
 }
 .pushmenu-push-toleft{
-  left: -270px;
+  left: -270px !important;
 }
 .pushmenu .push-logo{
 	display:block;

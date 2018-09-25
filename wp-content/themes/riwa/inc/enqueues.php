@@ -4,7 +4,7 @@ function riwa_scripts() {
 	
 	// THEME CSS FILES
     wp_enqueue_style( 'riwa-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'riwa-fonts', riwa_fonts_url(), array(), null );
+//	wp_enqueue_style( 'riwa-fonts', riwa_fonts_url(), array(), null );
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', array(), '3.4.1' );
 	wp_enqueue_style( 'bootstrap-min', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7' );
 	wp_enqueue_style( 'bootstrap-datepicker', get_template_directory_uri() . '/css/bootstrap-datetimepicker.min.css', array(), '1.0' );

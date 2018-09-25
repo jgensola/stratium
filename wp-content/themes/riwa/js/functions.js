@@ -1,10 +1,9 @@
 jQuery(function ($) {
 	'use strict';
- 
-	// Loader
+
 	jQuery(window).on('load', function () {
-		"use strict";
-		jQuery('.loader').fadeOut(800);
+        // Loader
+        jQuery('.loader').fadeOut(800);
 
         // Get IE or Edge browser version
         var version = detectIE();

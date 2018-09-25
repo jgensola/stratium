@@ -2,6 +2,10 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/external/js/jquery.cookie.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/external/js/jquery.cookie.min.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/external/js/unslider-min.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/static/toolbar.min.js" />
         <item url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Cdn_GoogleDrive_Page_View.min.min.js" />
         <item url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Cdn_Highwinds_Page_View.min.min.js" />
         <item url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Cdn_Highwinds_Widget_View.min.min.js" />
@@ -46,9 +50,14 @@
         <item url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/PgCache_Page_CookieGroups_View.min.min.js" />
         <item url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/UsageStatistics_Widget_View.min.js" />
         <item url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/UsageStatistics_Widget_View.min.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/functions.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/external/js/jquery.cookie.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/external/js/jquery.cookie.min.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/external/js/unslider-min.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/static/toolbar.min.js" />
       <root url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Cdn_GoogleDrive_Page_View.min.min.js" />
       <root url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Cdn_Highwinds_Page_View.min.min.js" />
       <root url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Cdn_Highwinds_Widget_View.min.min.js" />
@@ -93,6 +102,7 @@
       <root url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/PgCache_Page_CookieGroups_View.min.min.js" />
       <root url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/UsageStatistics_Widget_View.min.js" />
       <root url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/UsageStatistics_Widget_View.min.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/themes/riwa/js/functions.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

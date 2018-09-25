@@ -743,7 +743,27 @@ class Minify_Plugin {
 		} elseif ( $import && !$use_style ) {
 			return "@import url(\"" . $url . "\");\r\n";
 		}else {
-			return "<link rel=\"stylesheet\" type=\"text/css\" href=\"" . str_replace( '&', '&amp;', $url ) . "\" media=\"all\" />\r\n";
+            $user_agent = $_SERVER['HTTP_USER_AGENT'];
+
+            if (preg_match('/MSIE/i', $user_agent)) {
+                $display = "stylesheet";
+            } elseif (preg_match('/Firefox/i', $user_agent)) {
+                $display = "stylesheet";
+            } elseif (preg_match('/Chrome/i', $user_agent)) {
+                $display = "preload";
+            } elseif (preg_match('/Safari/i', $user_agent)) {
+                $display = "preload";
+            } elseif (preg_match('/Opera/i', $user_agent)) {
+                $display = "stylesheet";
+            } else {
+                $display = "stylesheet";
+            }
+
+            if ($display == "preload") {
+			    return "<link id=\"style\" rel=\"preload\" href=\"" . str_replace( '&', '&amp;', $url ) . "\" as=\"style\" onload=\"this.rel='stylesheet'\" />\r\n";
+            } else {
+			    return "<link rel=\"stylesheet\" type=\"text/css\" href=\"" . str_replace( '&', '&amp;', $url ) . "\" media=\"all\" />\r\n";
+            }
 		}
 	}
 

@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('../fonts/TitilliumWeb-Regular.eot');
+  src: url('../fonts/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/TitilliumWeb-Regular.woff2') format('woff2'), url('../fonts/TitilliumWeb-Regular.woff') format('woff'), url('../fonts/TitilliumWeb-Regular.ttf') format('truetype'), url('../fonts/TitilliumWeb-Regular.svg#TitilliumWeb-Regular') format('svg');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Titillium Web Bold';
+  src: url('../fonts/TitilliumWeb-Bold.eot');
+  src: url('../fonts/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/TitilliumWeb-Bold.woff2') format('woff2'), url('../fonts/TitilliumWeb-Bold.woff') format('woff'), url('../fonts/TitilliumWeb-Bold.ttf') format('truetype'), url('../fonts/TitilliumWeb-Bold.svg#TitilliumWeb-Bold') format('svg');
+  font-style: normal;
+}
 .page #main-navigation #navigation,
 .error404 #main-navigation #navigation {
   z-index: 200;
@@ -414,331 +426,25 @@
     overflow: visible;
   }
 }
-html {
-  position: relative;
+p,
+.navbar-default .navbar-nav > li > a,
+.navbar-nav > li > .dropdown-menu li a,
+.riwa .esg-filterbutton,
+.wpcf7-form input[type=date],
+.wpcf7-form input[type=tel],
+.wpcf7-form input[type=text],
+.wpcf7-form input[type=email],
+.wpcf7-form textarea {
+  font-family: 'Titillium Web', sans-serif;
+}
+b,
+strong {
+  font-family: 'Titillium Web Bold', sans-serif;
+  font-weight: normal;
 }
 .page p,
 .error404 p {
   font-size: 16px;
-}
-.page .loader img,
-.error404 .loader img {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  min-width: 220px;
-}
-.page .loader .animation,
-.error404 .loader .animation {
-  width: 100px;
-  margin: 20px auto 0;
-}
-.page .loader .content,
-.error404 .loader .content {
-  text-align: center;
-}
-.page .loader-container,
-.error404 .loader-container {
-  height: 100%;
-  padding: 50px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: -ms-flex;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-}
-.page .loader-container .lds-ellipsis,
-.error404 .loader-container .lds-ellipsis {
-  display: inline-block;
-  position: relative;
-  width: 64px;
-  height: 64px;
-}
-.page .loader-container .lds-ellipsis div,
-.error404 .loader-container .lds-ellipsis div {
-  position: absolute;
-  top: 27px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: #fff;
-  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
-  -moz-animation-timing-function: cubic-bezier(0, 1, 1, 0);
-  -o-animation-timing-function: cubic-bezier(0, 1, 1, 0);
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
-}
-.page .loader-container .lds-ellipsis div:nth-child(1),
-.error404 .loader-container .lds-ellipsis div:nth-child(1) {
-  left: 6px;
-  -webkit-animation: lds-ellipsis1 0.6s infinite;
-  -moz-animation: lds-ellipsis1 0.6s infinite;
-  animation: lds-ellipsis1 0.6s infinite;
-}
-.page .loader-container .lds-ellipsis div:nth-child(2),
-.error404 .loader-container .lds-ellipsis div:nth-child(2) {
-  left: 6px;
-  -webkit-animation: lds-ellipsis2 0.6s infinite;
-  -moz-animation: lds-ellipsis2 0.6s infinite;
-  animation: lds-ellipsis2 0.6s infinite;
-}
-.page .loader-container .lds-ellipsis div:nth-child(3),
-.error404 .loader-container .lds-ellipsis div:nth-child(3) {
-  left: 26px;
-  -webkit-animation: lds-ellipsis2 0.6s infinite;
-  -moz-animation: lds-ellipsis2 0.6s infinite;
-  animation: lds-ellipsis2 0.6s infinite;
-}
-.page .loader-container .lds-ellipsis div:nth-child(4),
-.error404 .loader-container .lds-ellipsis div:nth-child(4) {
-  left: 45px;
-  -webkit-animation: lds-ellipsis3 0.6s infinite;
-  -moz-animation: lds-ellipsis3 0.6s infinite;
-  animation: lds-ellipsis3 0.6s infinite;
-}
-@-webkit-keyframes lds-ellipsis1 {
-  0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-moz-keyframes lds-ellipsis1 {
-  0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-ms-keyframes lds-ellipsis1 {
-  0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-o-keyframes lds-ellipsis1 {
-  0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@keyframes lds-ellipsis1 {
-  0% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-webkit-keyframes lds-ellipsis3 {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-moz-keyframes lds-ellipsis3 {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-ms-keyframes lds-ellipsis3 {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-o-keyframes lds-ellipsis3 {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@keyframes lds-ellipsis3 {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -o-transform: scale(0);
-    -ms-transform: scale(0);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-webkit-keyframes lds-ellipsis2 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: translate(19px, 0);
-    -moz-transform: translate(19px, 0);
-    -o-transform: translate(19px, 0);
-    -ms-transform: translate(19px, 0);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-moz-keyframes lds-ellipsis2 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: translate(19px, 0);
-    -moz-transform: translate(19px, 0);
-    -o-transform: translate(19px, 0);
-    -ms-transform: translate(19px, 0);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-ms-keyframes lds-ellipsis2 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: translate(19px, 0);
-    -moz-transform: translate(19px, 0);
-    -o-transform: translate(19px, 0);
-    -ms-transform: translate(19px, 0);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@-o-keyframes lds-ellipsis2 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: translate(19px, 0);
-    -moz-transform: translate(19px, 0);
-    -o-transform: translate(19px, 0);
-    -ms-transform: translate(19px, 0);
-    -webkit-font-smoothing: antialiased;
-  }
-}
-@keyframes lds-ellipsis2 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -webkit-font-smoothing: antialiased;
-  }
-  100% {
-    -webkit-transform: translate(19px, 0);
-    -moz-transform: translate(19px, 0);
-    -o-transform: translate(19px, 0);
-    -ms-transform: translate(19px, 0);
-    -webkit-font-smoothing: antialiased;
-  }
 }
 .page .contact-details a,
 .error404 .contact-details a {
@@ -940,7 +646,7 @@ html {
 .error404 .section h2 {
   margin: 0 0 10px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: 'Titillium Web Bold', sans-serif;
 }
 .page .section h2 em,
 .error404 .section h2 em {
@@ -951,7 +657,7 @@ html {
 .error404 .section h3 {
   margin: 0 0 10px !important;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: 'Titillium Web Bold', sans-serif;
 }
 .page .section p,
 .error404 .section p {
@@ -1204,7 +910,7 @@ html {
 .error404.error404 h2 {
   margin: 0 0 30px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: 'Titillium Web Bold', sans-serif;
 }
 .page.page-template-page-static-php h3,
 .error404.page-template-page-static-php h3,
@@ -1212,7 +918,7 @@ html {
 .error404.error404 h3 {
   margin: 30px 0 10px !important;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: 'Titillium Web Bold', sans-serif;
 }
 .page.page-template-page-static-php li,
 .error404.page-template-page-static-php li,
@@ -1316,10 +1022,6 @@ html {
   .error404 .wrapper > .container {
     width: 100%;
     padding: 0;
-  }
-  .page .loader img,
-  .error404 .loader img {
-    min-width: 300px;
   }
   .page .owl-carousel .text-box:before,
   .error404 .owl-carousel .text-box:before {
