@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf3b229-07bf-45a1-a97d-be9257b9ede8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/riwa/images/world-footer-cropped.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/images/connector.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/images/connector.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/footer.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Minify_Plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Minify_Plugin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/variables.less" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,22 +29,23 @@
           <entry key="project.open.time.25" value="4" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="bak" value="1" />
           <entry key="css" value="32" />
-          <entry key="htaccess" value="8" />
+          <entry key="htaccess" value="9" />
           <entry key="html" value="1" />
           <entry key="js" value="31" />
           <entry key="less" value="38" />
-          <entry key="php" value="54" />
+          <entry key="php" value="58" />
           <entry key="sql" value="1" />
           <entry key="svg" value="2" />
         </counts>
@@ -57,20 +56,20 @@
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="31" />
           <entry key="Less" value="38" />
-          <entry key="PHP" value="54" />
+          <entry key="PHP" value="58" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SQL" value="1" />
           <entry key="SVG" value="2" />
-          <entry key="htaccess" value="8" />
+          <entry key="htaccess" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="74" />
-          <entry key="htaccess" value="48" />
+          <entry key="htaccess" value="50" />
           <entry key="js" value="221" />
-          <entry key="less" value="10904" />
-          <entry key="php" value="3761" />
+          <entry key="less" value="10915" />
+          <entry key="php" value="4334" />
           <entry key="svg" value="20" />
         </counts>
       </usages-collector>
@@ -78,10 +77,10 @@
         <counts>
           <entry key="CSS" value="74" />
           <entry key="JavaScript" value="221" />
-          <entry key="Less" value="10904" />
-          <entry key="PHP" value="3761" />
+          <entry key="Less" value="10915" />
+          <entry key="PHP" value="4334" />
           <entry key="SVG" value="20" />
-          <entry key="htaccess" value="48" />
+          <entry key="htaccess" value="50" />
         </counts>
       </usages-collector>
     </session>
@@ -91,17 +90,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/inc/enqueues.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+            <state relative-caret-position="976">
+              <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+            <state relative-caret-position="313">
+              <caret line="655" lean-forward="true" selection-start-line="655" selection-end-line="655" />
               <folding>
                 <element signature="e#387#419#0" />
                 <element signature="e#442#1166#0" />
@@ -109,11 +108,6 @@
                 <element signature="e#1299#1329#0" />
                 <element signature="e#1343#1369#0" />
                 <element signature="e#1396#1429#0" />
-                <element signature="e#9684#10422#0" />
-                <element signature="e#10439#11655#0" />
-                <element signature="e#11723#17256#0" />
-                <element signature="e#17327#17728#0" />
-                <element signature="e#17804#18136#0" />
               </folding>
             </state>
           </provider>
@@ -131,26 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="166" column="36" lean-forward="true" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/footer.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/buttons.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="19" selection-end-column="27" />
+            <state relative-caret-position="2656">
+              <caret line="166" column="36" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -158,52 +134,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="6624">
               <caret line="416" selection-start-line="416" selection-end-line="416" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-                <element signature="e#835#1012#0#HTML" />
-                <element signature="e#1027#1283#0#HTML" />
-                <element signature="e#1308#1614#0#HTML" />
-                <element signature="e#1632#1875#0#HTML" />
-                <element signature="e#1897#2021#0#HTML" />
-                <element signature="e#2050#2120#0#HTML" />
-                <element signature="e#2147#2190#0#HTML" />
-                <element signature="e#2218#2643#0#HTML" />
-                <element signature="e#2685#2814#0#HTML" />
-                <element signature="e#2860#3315#0#HTML" />
-                <element signature="e#3374#3577#0#HTML" />
-                <element signature="e#3636#3839#0#HTML" />
-                <element signature="e#3898#4102#0#HTML" />
-                <element signature="e#4161#4365#0#HTML" />
-                <element signature="e#4375#4925#0#HTML" />
-                <element signature="e#4935#5482#0#HTML" />
-                <element signature="e#5492#6038#0#HTML" />
-                <element signature="e#6048#6593#0#HTML" />
-                <element signature="e#6603#7145#0#HTML" />
-                <element signature="e#7155#7705#0#HTML" />
-                <element signature="e#7715#8262#0#HTML" />
-                <element signature="e#8272#8818#0#HTML" />
-                <element signature="e#8828#9373#0#HTML" />
-                <element signature="e#9383#9925#0#HTML" />
-                <element signature="e#9935#10553#0#HTML" />
-                <element signature="e#10563#11178#0#HTML" />
-                <element signature="e#11188#11802#0#HTML" />
-                <element signature="e#11812#12425#0#HTML" />
-                <element signature="e#12435#13045#0#HTML" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/header-static.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="409" column="33" lean-forward="true" selection-start-line="409" selection-start-column="33" selection-end-line="409" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="6496">
+              <caret line="408" column="83" selection-start-line="408" selection-start-column="83" selection-end-line="408" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -211,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            <state relative-caret-position="80">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -220,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Minify_Plugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="765" column="13" selection-start-line="745" selection-start-column="12" selection-end-line="765" selection-end-column="13" />
+            <state relative-caret-position="1081">
+              <caret line="1356" column="32" lean-forward="true" selection-start-line="1356" selection-start-column="32" selection-end-line="1356" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -230,18 +171,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.wrapper &gt; .container</find>
-      <find>wrapper &gt; .container</find>
-      <find>.below-the</find>
-      <find>* {</find>
-      <find>.container</find>
-      <find>.loader</find>
-      <find>fonts.</find>
-      <find>titil</find>
-      <find>Titillium+Web&amp;ver=1537426873</find>
-      <find>titill</find>
-      <find>titillium</find>
-      <find>img</find>
       <find>font-w</find>
       <find>font-weight: bold</find>
       <find>html</find>
@@ -259,17 +188,30 @@
       <find>.error404</find>
       <find>.new-button</find>
       <find>slider</find>
+      <find>riwa_preloader</find>
+      <find>&lt;!-- W3TC-include-js-head --&gt;</find>
       <find>li</find>
+      <find>defer</find>
+      <find>check_bro</find>
+      <find>preload</find>
+      <find>minify_helpers</find>
+      <find>_W3_MinifyHelpers</find>
+      <find>class</find>
+      <find>_W3_MinifyJsAuto</find>
+      <find>check</find>
+      <find>check_browser</find>
+      <find>&gt; .vc_column-inner</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\stratium\wp-content\themes\riwa\css</dir>
       <dir>C:\xampp\htdocs\stratium\wp-content</dir>
-      <dir>C:\xampp\htdocs\stratium\wp-content\themes</dir>
       <dir>C:\xampp\htdocs\stratium\wp-content\themes\riwa\js</dir>
       <dir>C:\xampp\htdocs\stratium\wp-content\plugins\contact-form-7</dir>
-      <dir>C:\xampp\htdocs\stratium\wp-content\themes\riwa</dir>
       <dir>C:\xampp\htdocs\stratium</dir>
       <dir>C:\xampp\htdocs\stratium\wp-content\plugins\w3-total-cache</dir>
+      <dir>C:\xampp\htdocs\stratium\wp-content\themes\riwa</dir>
+      <dir>C:\xampp\htdocs\stratium\wp-content\themes</dir>
+      <dir>C:\xampp\htdocs\stratium\wp-content\plugins</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -307,28 +249,28 @@
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/try.php" />
         <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/wp-config.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/.htaccess" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/riwa/inc/classes/class-header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/inc/googlefont.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/inc/enqueues.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/google_fonts/google_fonts.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/revslider/includes/googlefonts.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/redux-framework/ReduxCore/inc/fields/typography/googlefonts.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/riwa/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/fonts.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/css/riwa.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/css/side-panel.css" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Minify_Plugin.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/js/functions.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/footer.less" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/variables.less" />
-        <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less" />
+        <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/.htaccess" />
+        <option value="$PROJECT_DIR$/wp-content/themes/riwa/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/riwa/inc/classes/class-header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/header-static.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Minify_Plugin.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less" />
       </list>
     </option>
   </component>
@@ -344,9 +286,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -392,7 +334,16 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="riwa" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stratium" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stratium" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="riwa" type="462c0819:PsiDirectoryNode" />
+              <item name="inc" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stratium" type="b2602c69:ProjectViewProjectNode" />
@@ -401,24 +352,6 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="riwa" type="462c0819:PsiDirectoryNode" />
               <item name="less" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stratium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stratium" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="riwa" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="pages.less" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="stratium" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stratium" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="riwa" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="stratium.less" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -481,18 +414,19 @@
       <workItem from="1537414027299" duration="5669000" />
       <workItem from="1537491645933" duration="19981000" />
       <workItem from="1537749298276" duration="24449000" />
-      <workItem from="1537833752122" duration="13406000" />
+      <workItem from="1537833752122" duration="21989000" />
+      <workItem from="1538092553556" duration="2305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175047000" />
+    <option name="totallyTimeSpent" value="185935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14392324" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14552239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -660,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/inc/classes/class-header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="45" column="91" lean-forward="true" selection-start-line="45" selection-start-column="91" selection-end-line="45" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stratium.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -705,13 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/google_fonts/google_fonts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -723,13 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="183" column="40" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="125" column="52" lean-forward="true" selection-start-line="125" selection-start-column="52" selection-end-line="125" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -784,27 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/inc/enqueues.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Minify_Plugin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="765" column="13" selection-start-line="745" selection-start-column="12" selection-end-line="765" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/footer.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -812,10 +704,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="166" column="36" lean-forward="true" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
+        <state relative-caret-position="448">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/inc/classes/class-header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2336">
+          <caret line="61" column="29" lean-forward="true" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/inc/enqueues.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="976">
+          <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -826,10 +739,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2656">
+          <caret line="166" column="36" selection-start-line="166" selection-start-column="36" selection-end-line="166" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6624">
+          <caret line="416" selection-start-line="416" selection-end-line="416" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/header-static.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6496">
+          <caret line="408" column="83" selection-start-line="408" selection-start-column="83" selection-end-line="408" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Minify_Plugin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1081">
+          <caret line="1356" column="32" lean-forward="true" selection-start-line="1356" selection-start-column="32" selection-end-line="1356" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+        <state relative-caret-position="313">
+          <caret line="655" lean-forward="true" selection-start-line="655" selection-end-line="655" />
           <folding>
             <element signature="e#387#419#0" />
             <element signature="e#442#1166#0" />
@@ -837,60 +785,6 @@
             <element signature="e#1299#1329#0" />
             <element signature="e#1343#1369#0" />
             <element signature="e#1396#1429#0" />
-            <element signature="e#9684#10422#0" />
-            <element signature="e#10439#11655#0" />
-            <element signature="e#11723#17256#0" />
-            <element signature="e#17327#17728#0" />
-            <element signature="e#17804#18136#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="416" selection-start-line="416" selection-end-line="416" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-            <element signature="e#835#1012#0#HTML" />
-            <element signature="e#1027#1283#0#HTML" />
-            <element signature="e#1308#1614#0#HTML" />
-            <element signature="e#1632#1875#0#HTML" />
-            <element signature="e#1897#2021#0#HTML" />
-            <element signature="e#2050#2120#0#HTML" />
-            <element signature="e#2147#2190#0#HTML" />
-            <element signature="e#2218#2643#0#HTML" />
-            <element signature="e#2685#2814#0#HTML" />
-            <element signature="e#2860#3315#0#HTML" />
-            <element signature="e#3374#3577#0#HTML" />
-            <element signature="e#3636#3839#0#HTML" />
-            <element signature="e#3898#4102#0#HTML" />
-            <element signature="e#4161#4365#0#HTML" />
-            <element signature="e#4375#4925#0#HTML" />
-            <element signature="e#4935#5482#0#HTML" />
-            <element signature="e#5492#6038#0#HTML" />
-            <element signature="e#6048#6593#0#HTML" />
-            <element signature="e#6603#7145#0#HTML" />
-            <element signature="e#7155#7705#0#HTML" />
-            <element signature="e#7715#8262#0#HTML" />
-            <element signature="e#8272#8818#0#HTML" />
-            <element signature="e#8828#9373#0#HTML" />
-            <element signature="e#9383#9925#0#HTML" />
-            <element signature="e#9935#10553#0#HTML" />
-            <element signature="e#10563#11178#0#HTML" />
-            <element signature="e#11188#11802#0#HTML" />
-            <element signature="e#11812#12425#0#HTML" />
-            <element signature="e#12435#13045#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/header-static.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="409" column="33" lean-forward="true" selection-start-line="409" selection-start-column="33" selection-end-line="409" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

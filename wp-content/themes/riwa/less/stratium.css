@@ -560,11 +560,11 @@ strong {
   width: 100%;
   background: #000;
   content: '';
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-  filter: alpha(opacity=40);
-  -webkit-opacity: 0.4;
-  -moz-opacity: 0.4;
-  opacity: 0.4;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 .page .owl-carousel .text-box,
 .error404 .owl-carousel .text-box {
@@ -653,7 +653,7 @@ strong {
 .error404 .section > .vc_column-inner {
   max-width: 1200px;
   margin: auto;
-  padding: 30px 15px;
+  padding: 30px 15px 37px;
 }
 .page .section h2,
 .error404 .section h2 {
@@ -1060,7 +1060,7 @@ strong {
   }
   .page .section > .vc_column-inner,
   .error404 .section > .vc_column-inner {
-    padding: 40px 30px;
+    padding: 40px 30px 47px;
   }
   .page .section > .vc_column-inner h2,
   .error404 .section > .vc_column-inner h2 {

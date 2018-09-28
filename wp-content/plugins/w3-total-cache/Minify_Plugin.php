@@ -743,23 +743,7 @@ class Minify_Plugin {
 		} elseif ( $import && !$use_style ) {
 			return "@import url(\"" . $url . "\");\r\n";
 		}else {
-            $user_agent = $_SERVER['HTTP_USER_AGENT'];
-
-            if (preg_match('/MSIE/i', $user_agent)) {
-                $display = "stylesheet";
-            } elseif (preg_match('/Firefox/i', $user_agent)) {
-                $display = "stylesheet";
-            } elseif (preg_match('/Chrome/i', $user_agent)) {
-                $display = "preload";
-            } elseif (preg_match('/Safari/i', $user_agent)) {
-                $display = "preload";
-            } elseif (preg_match('/Opera/i', $user_agent)) {
-                $display = "stylesheet";
-            } else {
-                $display = "stylesheet";
-            }
-
-            if ($display == "preload") {
+            if (_W3_MinifyHelpers::check_browser('CSS')) {
 			    return "<link id=\"style\" rel=\"preload\" href=\"" . str_replace( '&', '&amp;', $url ) . "\" as=\"style\" onload=\"this.rel='stylesheet'\" />\r\n";
             } else {
 			    return "<link rel=\"stylesheet\" type=\"text/css\" href=\"" . str_replace( '&', '&amp;', $url ) . "\" media=\"all\" />\r\n";
@@ -1244,8 +1228,13 @@ class _W3_MinifyHelpers {
 					$script = '<script async type="text/javascript" src="' .
 						str_replace( '&', '&amp;', $url ) . '"></script>';
 				} else if ( $embed_type == 'nb-defer' ) {
-					$script = '<script defer type="text/javascript" src="' .
-						str_replace( '&', '&amp;', $url ) . '"></script>';
+                    if (_W3_MinifyHelpers::check_browser('JS')) {
+                        $script = '<script defer type="text/javascript" src="' .
+                            str_replace( '&', '&amp;', $url ) . '"></script>';
+                    } else {
+                        $script = '<script type="text/javascript" src="' .
+                            str_replace( '&', '&amp;', $url ) . '"></script>';
+                    }
 				} else if ( $embed_type == 'extsrc' ) {
 					$script = '<script type="text/javascript" extsrc="' .
 						str_replace( '&', '&amp;', $url ) . '"></script>';
@@ -1347,6 +1336,44 @@ class _W3_MinifyHelpers {
 		$uri = Util_Environment::url_to_uri( $url );
 		header( 'Link: <' . $uri . '>; rel=preload; as=' . $as, false );
 	}
+
+    /**
+     * Checks browser used
+     *
+     * @param string  $filetype
+     * @return boolean
+     */
+    public static function check_browser( $filetype ) {
+        $deferJS = false;
+        $preloadCSS = false;
+
+        $user_agent = $_SERVER['HTTP_USER_AGENT'];
+
+        if (preg_match('/MSIE/i', $user_agent)) {
+            $deferJS = false;
+            $preloadCSS = false;
+        } elseif (preg_match('/Firefox/i', $user_agent)) {
+            $deferJS = true;
+            $preloadCSS = false;
+        } elseif (preg_match('/Chrome/i', $user_agent)) {
+            $deferJS = true;
+            $preloadCSS = true;
+        } elseif (preg_match('/Safari/i', $user_agent)) {
+            $deferJS = true;
+            $preloadCSS = true;
+        } elseif (preg_match('/Opera/i', $user_agent)) {
+            $deferJS = false;
+            $preloadCSS = false;
+        } else {
+            $deferJS = false;
+        }
+
+        if ($filetype == "JS") {
+            return $deferJS;
+        } else {
+            return$preloadCSS;
+        }
+    }
 }
 
 /**
