@@ -1,0 +1,552 @@
+@{stratium-pages} {
+    #myc-container-0 {
+        display: none;
+    }
+
+    .myc-content-overlay {
+        position: fixed;
+        overflow: hidden;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+
+        width: 100%;
+        max-height: 100%;
+        min-width: 100%;
+
+        background: darken(@concrete, 10%);
+        color: @white;
+
+        text-align: left;
+
+        .transition(all .7s);
+        .flex-display();
+        .flex-direction(column);
+    }
+
+    .myc-content-overlay-container {
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        display: block !important;
+        left: auto !important;
+        right: 0;
+        bottom: 0;
+
+        width: auto;
+        height: auto;
+
+        .flex(1);
+
+        .myc-container {
+            position: absolute;
+
+            height: 100%;
+            width: 100%;
+
+            color: @mine-shaft;
+
+            .flex-display();
+            .flex-direction(column);
+
+            #myc-input-area {
+                position: relative;
+
+                padding: 20px 15px;
+
+                background: @concrete;
+
+                .flex-display();
+                .align-items(center);
+            }
+
+            .myc-conversation-area {
+                position: relative;
+                display: block;
+                overflow: auto;
+
+                padding: 20px;
+                max-height: none;
+                height: 100%;
+            }
+        }
+
+        .myc-text {
+            padding: 8px 45px 8px 15px;
+            width: 100%;
+            min-width: auto;
+            border: 2px solid @gray;
+            box-sizing: border-box;
+
+            background: @white;
+
+            font-size: 16px;
+
+            .border-radius(30px);
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .myc-conversation-bubble {
+            display: inline-block;
+
+            padding: 6px 9px;
+            max-width: 80%;
+
+            .opacity(.8);
+
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+
+        .myc-is-active {
+            .opacity(1);
+        }
+
+        .myc-conversation-bubble-container-request {
+            text-align: right;
+        }
+
+        .myc-conversation-bubble-container-response {
+            text-align: left;
+        }
+
+        .myc-conversation-request {
+            position: relative;
+
+            color: @white;
+            background: @pelorous;
+
+            .border-radius(10px 10px 0 10px);
+        }
+
+        .myc-conversation-response {
+            position: relative;
+
+            background: @white;
+
+            .border-radius(0 10px 10px 10px);
+        }
+    }
+
+    .myc-content-overlay-header {
+        z-index: 3;
+        overflow: hidden;
+
+        height: 50px;
+        padding: 0 10px 0 0;
+
+        background: url('@{image-path}chat-logo.svg') @mine-shaft no-repeat 5px 15px;
+        background-size: 150px 17px;
+
+        font-weight: bold;
+        line-height: 50px;
+        font-size: 22px;
+
+        cursor: pointer;
+
+        &:hover .myc-icon-toggle-down {
+            .opacity(.8);
+        }
+
+        .myc-icon-toggle-down {
+            float: right;
+
+            font-family: @icon-font !important;
+            line-height: 50px;
+
+            &:before {
+                content: @icon-angle-down;
+            }
+        }
+    }
+
+    .myc-content-overlay-header-text {
+        display: none;
+    }
+
+    .myc-toggle-open {
+        min-height: 100%;
+        visibility: visible;
+    }
+
+    .myc-toggle-closed {
+        right: 25px;
+        bottom: 25px;
+        z-index: 999;
+        visibility: hidden;
+
+        min-width: 0;
+        min-height: 0;
+        width: 40px;
+        height: 40px;
+
+        background: transparent;
+
+        .box-shadow(none);
+        .border-radius(40px);
+
+        &:hover {
+            background: @white-button-hover;
+        }
+
+        &.affix-top {
+            border-color: @pelorous;
+
+            background: @pelorous;
+
+            .opacity(.5);
+
+            &:hover {
+                .opacity(1);
+            }
+        }
+
+        .myc-content-overlay-header {
+            position: fixed;
+            right: 27px;
+            bottom: 27px;
+
+            width: 36px;
+            height: 36px;
+            padding: 0;
+
+            background: transparent;
+
+            font-weight: normal;
+
+            .border-radius(40px);
+            .flex-display();
+            .align-items(center);
+            .justify-content(center);
+
+            &:before {
+                width: 0;
+                margin: 0;
+            }
+        }
+
+        .myc-icon-toggle-up {
+            line-height: 2;
+
+            &:before {
+                display: block;
+
+                margin-top: -3px;
+
+                font-size: 17px;
+                font-family: @icon-font;
+
+                content: @icon-comment;
+            }
+        }
+
+        .myc-icon-toggle-down {
+            display: none;
+        }
+
+        .myc-content-overlay-container {
+            position: fixed;
+            left: 0;
+
+            .myc-container #myc-input-area {
+                position: unset;
+
+                width: 0;
+            }
+
+            .myc-text {
+                width: 0;
+                border-color: transparent;
+
+                font-size: 0;
+            }
+        }
+    }
+
+    .send-button {
+        position: absolute;
+        right: 34px;
+
+        height: 0;
+        width: 0;
+
+        background: @gray;
+
+        cursor: pointer;
+
+        .border-radius(100%);
+        .flex-display();
+        .align-items(center);
+        .justify-content(center);
+        .transition(all .4s);
+
+        &:after {
+            color: @white;
+
+            font-family: @icon-font;
+
+            content: @icon-arrow-alt-circle-right;
+        }
+
+        &:hover {
+            background: @pelorous;
+        }
+
+        &.visible {
+            right: 23px;
+
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    .chat-toggle {
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        z-index: 998;
+
+        height: 36px;
+        width: 36px;
+        border: 2px solid @white;
+
+        text-align: center;
+        line-height: 2;
+
+        color: @white;
+
+        cursor: pointer;
+
+        .border-radius(40px);
+        .transition(all .7s);
+
+        &.active,
+        &:hover {
+            background: @chat-input-background;
+        }
+
+        &:after {
+            display: inline-block;
+
+            font-size: 17px;
+            font-family: @icon-font;
+
+            content: @icon-comment;
+        }
+
+        &.affix-top {
+            border-color: @pelorous;
+
+            background: @pelorous;
+
+            .opacity(.5);
+
+            &.active,
+            &:hover {
+                .opacity(1);
+            }
+        }
+    }
+
+    .myc-loading {
+        display: block;
+
+        padding: 6px 9px;
+        margin: 0 auto;
+        width: 70px;
+
+        text-align: center;
+        vertical-align: center;
+    }
+
+    .myc-icon-loading-dot {
+        display: inline-block;
+
+        margin: 0 2px;
+        height: 5px;
+        width: 5px;
+
+        background: @scorpion;
+
+        font-size: 1em;
+
+        .border-radius(5px);
+        .animation(sk-bouncedelay 1.4s infinite ease-in-out both);
+
+        &:nth-child(1) {
+            .animation-delay(-0.32s);
+        }
+
+        &:nth-child(2) {
+            .animation-delay(-0.16s);
+        }
+
+        .keyframes(sk-bouncedelay, {
+            0%, 80%, 100% {
+                .transform(scale(0));
+            }
+            40% {
+              .transform(scale(1));
+            }
+        });
+    }
+
+    &.page-template-page-static-php,
+    &.error404 {
+        #myc-container-0 {
+            .flex-display();
+        }
+
+        .chat-toggle,
+        .myc-toggle-closed {
+            border-color: @pelorous;
+
+            background: @pelorous;
+
+            .opacity(.5);
+
+            &.active,
+            &:hover {
+                .opacity(1);
+            }
+        }
+    }
+}
+
+// Screens >= 768px
+@media only screen  and (min-width: @screen__m) {
+    @{stratium-pages} {
+        .myc-content-overlay {
+            height: 75%;
+
+            max-height: 500px;
+            max-width: 300px;
+            min-height: auto;
+            min-width: auto;
+
+            .box-shadow(0 0 3px @black-button-hover);
+        }
+
+        .myc-content-overlay-container .myc-text {
+            font-size: 14px;
+        }
+
+        .myc-toggle-closed {
+            height: 40px;
+        }
+
+        .myc-toggle-open {
+            right: 90px;
+            bottom: 25px;
+            overflow: visible;
+
+            .opacity(1);
+        }
+
+        .myc-content-overlay-header {
+            padding-right: 15px;
+        }
+
+        .send-button {
+            right: 36px;
+
+            font-size: 12px;
+
+            &.visible {
+                right: 24px;
+
+                height: 25px;
+                width: 25px;
+            }
+        }
+    }
+}
+
+// IE
+.ie-11,
+.ie-10,
+.ie-9,
+.ie-8,
+.ie-7 {
+    @{stratium-pages} {
+        .myc-content-overlay-header {
+            background-size: 131px 17px;
+            background-position: 15px 15px;
+        }
+
+        .myc-toggle-closed {
+            overflow: hidden;
+
+            #myc-input-area,
+            .myc-conversation-bubble-container {
+                display: none;
+            }
+
+            .myc-conversation-area {
+                overflow: hidden;
+            }
+        }
+
+        .myc-content-overlay-container {
+            position: static;
+
+            .myc-container {
+                .flex(1);
+                .justify-content(space-between);
+
+                .myc-conversation-area {
+                    margin-bottom: 130px;
+                }
+
+                #myc-input-area {
+                    position: absolute;
+                    bottom: 50px;
+
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            .myc-text {
+                height: 40px;
+                margin: 20px 15px;
+            }
+        }
+
+        .send-button.visible {
+            right: 20px;
+
+            margin-top: -15px;
+        }
+    }
+
+    // Screens >= 768px
+    @media only screen  and (min-width: @screen__m) {
+        @{stratium-pages} {
+            .myc-content-overlay-container {
+                position: relative;
+
+                .myc-container {
+                    .myc-conversation-area {
+                        margin-bottom: 80px;
+                    }
+
+                    #myc-input-area {
+                        bottom: 0;
+                    }
+                }
+            }
+
+            .send-button.visible {
+                right: 23px;
+
+                margin-top: -13px;
+            }
+        }
+    }
+}

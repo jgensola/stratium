@@ -12,7 +12,7 @@ global $redux_ti; // Get theme options
 	do_action( 'riwa_footer_layout', $riwa_footer_layout);
 ?>
 
-<a href="#" id="back-top" class="show"><i class="fa fa-angle-up fa-2x"></i></a>
+<a href="#" id="back-top" class="show" title="Back to Top"><i class="fa fa-angle-up fa-2x"></i></a>
   
 </div>
 

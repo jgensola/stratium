@@ -201,7 +201,7 @@ jQuery(function ($) {
 	// ========================================================================= 
 
 	if ($('#back-top').length) {
-		var scrollTrigger = 600, // px
+		var scrollTrigger = 500, // px
 			backToTop = function () {
 				var scrollTop = $(window).scrollTop();
 				if (scrollTop > scrollTrigger) {
@@ -221,6 +221,20 @@ jQuery(function ($) {
 			}, 700, 'linear');
 		});
 	}
+
+    // =========================================================================
+    //	Chatbox
+    // =========================================================================
+
+    $(document).scroll(function() {
+        if($(window).scrollTop() === 0) {
+            $('.myc-content-overlay').removeClass('affix-top');
+            $('.chat-toggle').removeClass('affix-top');
+        } else {
+            $('.myc-content-overlay').addClass('affix-top');
+            $('.chat-toggle').addClass('affix-top');
+		}
+    });
 
 
 	// ======================================================
