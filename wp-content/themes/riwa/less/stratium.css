@@ -255,7 +255,7 @@
   .page.pushmenu-push-toleft,
   .error404.pushmenu-push-toleft {
     left: 0 !important;
-    overflow: auto;
+    overflow: auto !important;
   }
   .page.pushmenu-push-toleft .dark-screen,
   .error404.pushmenu-push-toleft .dark-screen {
@@ -1560,26 +1560,16 @@ strong {
 .error404 .myc-content-overlay-container .myc-conversation-bubble {
   display: inline-block;
   padding: 6px 9px;
-  max-width: 80%;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80);
-  -webkit-opacity: 0.8;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
+  max-width: 60%;
+  text-align: left;
 }
-.page .myc-content-overlay-container .myc-conversation-bubble:before,
-.error404 .myc-content-overlay-container .myc-conversation-bubble:before,
-.page .myc-content-overlay-container .myc-conversation-bubble:after,
-.error404 .myc-content-overlay-container .myc-conversation-bubble:after {
-  display: none;
+.page .myc-content-overlay-container .myc-conversation-bubble-container,
+.error404 .myc-content-overlay-container .myc-conversation-bubble-container {
+  margin-bottom: 12px;
 }
-.page .myc-content-overlay-container .myc-is-active,
-.error404 .myc-content-overlay-container .myc-is-active {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  opacity: 1;
+.page .myc-content-overlay-container .myc-conversation-bubble-container:last-of-type,
+.error404 .myc-content-overlay-container .myc-conversation-bubble-container:last-of-type {
+  margin-bottom: 20px;
 }
 .page .myc-content-overlay-container .myc-conversation-bubble-container-request,
 .error404 .myc-content-overlay-container .myc-conversation-bubble-container-request {
@@ -1616,14 +1606,25 @@ strong {
 .error404 .myc-content-overlay-header {
   z-index: 3;
   overflow: hidden;
+  position: relative;
   height: 50px;
-  padding: 0 10px 0 0;
-  background: url('../images/chat-logo.svg') #202020 no-repeat 5px 15px;
-  background-size: 150px 17px;
-  font-weight: bold;
+  padding: 0 15px 0 0;
+  background: #202020;
   line-height: 50px;
   font-size: 22px;
   cursor: pointer;
+}
+.page .myc-content-overlay-header:before,
+.error404 .myc-content-overlay-header:before {
+  position: absolute;
+  display: inline-block;
+  top: 17px;
+  left: 15px;
+  height: 18px;
+  width: 180px;
+  background: url('../images/chat-logo.svg') no-repeat;
+  background-size: contain;
+  content: '';
 }
 .page .myc-content-overlay-header:hover .myc-icon-toggle-down,
 .error404 .myc-content-overlay-header:hover .myc-icon-toggle-down {
@@ -1704,7 +1705,6 @@ strong {
   height: 36px;
   padding: 0;
   background: transparent;
-  font-weight: normal;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
@@ -1734,7 +1734,7 @@ strong {
 .page .myc-toggle-closed .myc-icon-toggle-up:before,
 .error404 .myc-toggle-closed .myc-icon-toggle-up:before {
   display: block;
-  margin-top: -3px;
+  margin-top: -2px;
   font-size: 17px;
   font-family: 'fontawesome';
   content: '\f075';
@@ -1766,6 +1766,8 @@ strong {
   height: 0;
   width: 0;
   background: #a3a3a3;
+  color: #fff;
+  font-size: 0;
   cursor: pointer;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -1790,12 +1792,13 @@ strong {
 }
 .page .send-button:after,
 .error404 .send-button:after {
-  color: #fff;
   font-family: 'fontawesome';
-  content: '\f061';
+  content: '\f062';
 }
 .page .send-button:hover,
-.error404 .send-button:hover {
+.error404 .send-button:hover,
+.page .send-button.pressed,
+.error404 .send-button.pressed {
   background: #45a6c3;
 }
 .page .send-button.visible,
@@ -1803,6 +1806,7 @@ strong {
   right: 23px;
   height: 30px;
   width: 30px;
+  font-size: 12px;
 }
 .page .chat-toggle,
 .error404 .chat-toggle {
@@ -1864,7 +1868,6 @@ strong {
 .page .myc-loading,
 .error404 .myc-loading {
   display: block;
-  padding: 6px 9px;
   margin: 0 auto;
   width: 70px;
   text-align: center;
@@ -2039,6 +2042,10 @@ strong {
   -moz-opacity: 1;
   opacity: 1;
 }
+.page.pushmenu-push-toleft .myc-toggle-open,
+.error404.pushmenu-push-toleft .myc-toggle-open {
+  bottom: -100%;
+}
 @media only screen and (min-width: 768px) {
   .page .myc-content-overlay,
   .error404 .myc-content-overlay {
@@ -2070,10 +2077,6 @@ strong {
     -moz-opacity: 1;
     opacity: 1;
   }
-  .page .myc-content-overlay-header,
-  .error404 .myc-content-overlay-header {
-    padding-right: 15px;
-  }
   .page .send-button,
   .error404 .send-button {
     right: 36px;
@@ -2085,19 +2088,10 @@ strong {
     height: 25px;
     width: 25px;
   }
-}
-.ie-11 .page .myc-content-overlay-header,
-.ie-10 .page .myc-content-overlay-header,
-.ie-9 .page .myc-content-overlay-header,
-.ie-8 .page .myc-content-overlay-header,
-.ie-7 .page .myc-content-overlay-header,
-.ie-11 .error404 .myc-content-overlay-header,
-.ie-10 .error404 .myc-content-overlay-header,
-.ie-9 .error404 .myc-content-overlay-header,
-.ie-8 .error404 .myc-content-overlay-header,
-.ie-7 .error404 .myc-content-overlay-header {
-  background-size: 131px 17px;
-  background-position: 15px 15px;
+  .page.pushmenu-push-toleft .myc-toggle-open,
+  .error404.pushmenu-push-toleft .myc-toggle-open {
+    bottom: 25px;
+  }
 }
 .ie-11 .page .myc-toggle-closed,
 .ie-10 .page .myc-toggle-closed,

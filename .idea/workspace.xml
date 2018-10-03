@@ -2,68 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf3b229-07bf-45a1-a97d-be9257b9ede8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/css/admin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/css/frontend.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/css/frontend.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/fonts/icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/fonts/icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/fonts/icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/fonts/icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/images/myc-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/images/screenshots/screenshot-1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/images/screenshots/screenshot-2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/images/screenshots/screenshot-3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/images/screenshots/screenshot-4.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/admin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/actions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/admin/admin-actions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/admin/admin-pages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/admin/settings/display-settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/admin/settings/register-settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/admin/upgrades/upgrade-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/admin/welcome.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/ajax-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/api/class-myc-api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/install.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/misc-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/post-meta-box.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/scripts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/shortcodes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/template-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-overlay.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-shortcode.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-widget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/widgets.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/languages/my-chatbot.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/languages/my-chatbot.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/my-chatbot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/uninstall.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/riwa/images/chat-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/riwa/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/chatbox.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/js/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/js/functions.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/js/functions.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/buttons.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/buttons.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/footer.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-shortcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-shortcode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/images/chat-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/images/chat-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/images/world-footer-cropped.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/images/world-footer-cropped.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/images/world.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/images/world.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/chatbox.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/chatbox.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/header.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/header.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/less/variables.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/riwa/try.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/riwa/try.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +25,7 @@
     <session id="-1038967208">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -85,14 +35,15 @@
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="4" />
           <entry key="project.open.time.26" value="1" />
-          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -102,9 +53,9 @@
           <entry key="htaccess" value="9" />
           <entry key="html" value="1" />
           <entry key="js" value="38" />
-          <entry key="less" value="51" />
-          <entry key="php" value="69" />
-          <entry key="rnc" value="2" />
+          <entry key="less" value="54" />
+          <entry key="php" value="70" />
+          <entry key="rnc" value="3" />
           <entry key="sql" value="1" />
           <entry key="svg" value="3" />
         </counts>
@@ -114,10 +65,10 @@
           <entry key="CSS" value="39" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="38" />
-          <entry key="Less" value="51" />
-          <entry key="PHP" value="69" />
+          <entry key="Less" value="54" />
+          <entry key="PHP" value="70" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="RNG Compact" value="2" />
+          <entry key="RNG Compact" value="3" />
           <entry key="SQL" value="1" />
           <entry key="SVG" value="3" />
           <entry key="htaccess" value="9" />
@@ -127,18 +78,18 @@
         <counts>
           <entry key="css" value="74" />
           <entry key="htaccess" value="50" />
-          <entry key="js" value="1156" />
-          <entry key="less" value="16531" />
-          <entry key="php" value="4538" />
+          <entry key="js" value="1556" />
+          <entry key="less" value="16859" />
+          <entry key="php" value="4542" />
           <entry key="svg" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="74" />
-          <entry key="JavaScript" value="1156" />
-          <entry key="Less" value="16531" />
-          <entry key="PHP" value="4538" />
+          <entry key="JavaScript" value="1556" />
+          <entry key="Less" value="16859" />
+          <entry key="PHP" value="4542" />
           <entry key="SVG" value="20" />
           <entry key="htaccess" value="50" />
         </counts>
@@ -147,19 +98,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/chatbox.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="490" column="33" selection-start-line="490" selection-start-column="33" selection-end-line="490" selection-end-column="33" />
+            <state relative-caret-position="411">
+              <caret line="434" column="22" selection-start-line="434" selection-start-column="22" selection-end-line="434" selection-end-column="22" />
               <folding>
                 <element signature="e#41#71#0" />
-                <element signature="e#509#2594#0" />
-                <element signature="e#2628#3270#0" />
-                <element signature="e#3309#3339#0" />
-                <element signature="e#5190#5354#0" />
-                <element signature="e#5969#6248#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="398" column="39" selection-start-line="398" selection-start-column="39" selection-end-line="398" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/header.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="150" column="35" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -168,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/footer.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -177,7 +141,16 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/buttons.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="651">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+              <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/variables.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -185,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/js/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="592">
-              <caret line="236" column="7" lean-forward="true" selection-start-line="236" selection-start-column="7" selection-end-line="236" selection-end-column="7" />
+            <state relative-caret-position="192">
+              <caret line="208" column="24" selection-start-line="208" selection-start-column="24" selection-end-line="208" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -194,17 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="294" column="87" lean-forward="true" selection-start-line="294" selection-start-column="87" selection-end-line="294" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="880">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
             </state>
           </provider>
         </entry>
@@ -212,17 +176,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-shortcode.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="62" lean-forward="true" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-overlay.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+            <state relative-caret-position="160">
+              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -231,16 +186,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>check_bro</find>
-      <find>preload</find>
-      <find>minify_helpers</find>
-      <find>_W3_MinifyHelpers</find>
-      <find>class</find>
-      <find>_W3_MinifyJsAuto</find>
-      <find>check</find>
-      <find>check_browser</find>
-      <find>&gt; .vc_column-inner</find>
-      <find>affix-top</find>
       <find>myc-content-overlay-header-text</find>
       <find>font-size</find>
       <find>#myc-</find>
@@ -261,6 +206,16 @@
       <find>back-top</find>
       <find>ke</find>
       <find>textQuery</find>
+      <find>myc-conversation-bubble-container-response</find>
+      <find>myc-conversation-bubble-container</find>
+      <find>.myc-icon-toggle-down</find>
+      <find>@icon-arrow-alt-circle-right</find>
+      <find>send</find>
+      <find>jQuery('input.myc-text')</find>
+      <find>jQuery(&quot;input.myc-text&quot;)</find>
+      <find>jQuery('.send-button').</find>
+      <find>conversation-bubble</find>
+      <find>push</find>
     </findStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\stratium\wp-content\themes\riwa\css</dir>
@@ -321,19 +276,19 @@
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/mixins.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/try.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/footer.less" />
-        <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/header.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/js/functions.js" />
         <option value="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-widget.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-shortcode.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/variables.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/buttons.less" />
-        <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/chatbox.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.min.css" />
         <option value="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-overlay.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/variables.less" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-shortcode.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/header.less" />
+        <option value="$PROJECT_DIR$/wp-content/themes/riwa/less/chatbox.less" />
       </list>
     </option>
   </component>
@@ -359,7 +314,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -490,6 +444,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -500,15 +455,15 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\stratium\wp-content\themes\riwa\fonts" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\stratium\wp-content\themes\riwa\js" />
       <recent name="C:\xampp\htdocs\stratium\wp-content\themes\riwa\images" />
+      <recent name="C:\xampp\htdocs\stratium\wp-content\themes\riwa\js" />
       <recent name="C:\xampp\htdocs\stratium\wp-content\themes\riwa\css" />
       <recent name="C:\xampp\htdocs\stratium" />
       <recent name="C:\xampp\htdocs\stratium\wp-content\themes\riwa" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\stratium\wp-content\themes\riwa\fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -551,18 +506,20 @@
       <workItem from="1538092553556" duration="2649000" />
       <workItem from="1538096667680" duration="20862000" />
       <workItem from="1538352743240" duration="24525000" />
-      <workItem from="1538438718756" duration="24164000" />
+      <workItem from="1538438718756" duration="25659000" />
+      <workItem from="1538525260526" duration="5453000" />
+      <workItem from="1538533366460" duration="8809000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255830000" />
+    <option name="totallyTimeSpent" value="271587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15031983" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15351813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -599,9 +556,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Created a &quot;Check Browser&quot; class and adjusted the mobile layout" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/advanced-cache.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="778">
@@ -788,21 +742,6 @@
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/template-functions.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9328">
-          <caret line="636" selection-start-line="636" selection-end-line="636" />
-          <folding>
-            <element signature="e#387#419#0" />
-            <element signature="e#442#1166#0" />
-            <element signature="e#1194#1280#0" />
-            <element signature="e#1299#1329#0" />
-            <element signature="e#1343#1369#0" />
-            <element signature="e#1396#1429#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/mixins.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2848">
@@ -817,20 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/variables.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1046">
-          <caret line="144" column="5" lean-forward="true" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/footer.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-854">
@@ -838,56 +763,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/buttons.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/chatbox.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="490" column="33" selection-start-line="490" selection-start-column="33" selection-end-line="490" selection-end-column="33" />
-          <folding>
-            <element signature="e#41#71#0" />
-            <element signature="e#509#2594#0" />
-            <element signature="e#2628#3270#0" />
-            <element signature="e#3309#3339#0" />
-            <element signature="e#5190#5354#0" />
-            <element signature="e#5969#6248#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="236" column="7" lean-forward="true" selection-start-line="236" selection-start-column="7" selection-end-line="236" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2512">
-          <caret line="1909" column="27" lean-forward="true" selection-start-line="1909" selection-start-column="27" selection-end-line="1909" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.min.css" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3216">
@@ -902,20 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="294" column="87" lean-forward="true" selection-start-line="294" selection-start-column="87" selection-end-line="294" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-shortcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="62" lean-forward="true" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -923,10 +785,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/stratium.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-overlay.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/buttons.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/variables.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/includes/templates/chatbot-shortcode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="208" column="24" selection-start-line="208" selection-start-column="24" selection-end-line="208" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/pages.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="398" column="39" selection-start-line="398" selection-start-column="39" selection-end-line="398" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/header.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="150" column="35" selection-start-line="150" selection-start-column="24" selection-end-line="150" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/riwa/less/chatbox.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="434" column="22" selection-start-line="434" selection-start-column="22" selection-end-line="434" selection-end-column="22" />
+          <folding>
+            <element signature="e#41#71#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -5,74 +5,89 @@
 // When ready :)
 jQuery(document).ready(function() {
 	var message = "";
+	var inputbox = jQuery('input.myc-text');
+	var sendbutton = jQuery('.send-button');
+
 	/*
 	 * When the user enters text in the text input text field and then the presses Enter key
 	 */
 
-	jQuery('input.myc-text').keyup(function(event) {
+    inputbox.keyup(function(event) {
         message = jQuery(this).val();
 
-        if (message != "") {
-            jQuery('.send-button').addClass('visible');
+        if (jQuery.trim(message).length) {
+            sendbutton.addClass('visible');
 		} else
-            jQuery('.send-button').removeClass('visible');
+            sendbutton.removeClass('visible');
 	});
 
-	jQuery("input.myc-text").keypress(function(event) {
+	inputbox.keypress(function(event) {
 		if (event.which == 13) {
-			event.preventDefault();
-			jQuery(".myc-conversation-area .myc-conversation-request").removeClass("myc-is-active");
+            if (jQuery.trim(message).length) {
+                sendbutton.addClass('pressed');
 
-			var text = message;
-			var date = new Date();
+                event.preventDefault();
+                jQuery(".myc-conversation-area .myc-conversation-request").removeClass("myc-is-active");
 
-			var containerId = jQuery(this).closest(".myc-container").attr('id');
-			var parts = containerId.split("-");
-			var sequence = parts[2];
+                var text = message;
+                var date = new Date();
+                message = "";
 
-			var innerHTML = "<div class=\"myc-conversation-bubble-container myc-conversation-bubble-container-request\"><div class=\"myc-conversation-bubble myc-conversation-request myc-is-active\">" + escapeTextInput(text) + "</div>";
-			if (myc_script_vars.show_time) {
-				innerHTML += "<div class=\"myc-datetime\">" + date.toLocaleTimeString() + "</div>";
-			}
-			innerHTML += "</div>";
-			if (myc_script_vars.show_loading) {
-				innerHTML += "<div class=\"myc-loading\"><i class=\"myc-icon-loading-dot\" /><i class=\"myc-icon-loading-dot\" /><i class=\"myc-icon-loading-dot\" /></div>";
-			}
-			jQuery("#myc-container-" + sequence + " .myc-conversation-area").append(innerHTML);
-			jQuery("#myc-container-" + sequence + " input.myc-text").val("");
-			jQuery("#myc-container-" + sequence + " .myc-conversation-area")
-					.scrollTop(jQuery("#myc-container-" + sequence + " .myc-conversation-area")
-					.prop("scrollHeight"));
-			textQuery(text, sequence);
+                var containerId = jQuery(this).closest(".myc-container").attr('id');
+                var parts = containerId.split("-");
+                var sequence = parts[2];
+
+                var innerHTML = "<div class=\"myc-conversation-bubble-container myc-conversation-bubble-container-request\"><div class=\"myc-conversation-bubble myc-conversation-request myc-is-active\">" + escapeTextInput(text) + "</div>";
+                if (myc_script_vars.show_time) {
+                    innerHTML += "<div class=\"myc-datetime\">" + date.toLocaleTimeString() + "</div>";
+                }
+                innerHTML += "</div>";
+                if (myc_script_vars.show_loading) {
+                    innerHTML += "<div class=\"myc-loading\"><i class=\"myc-icon-loading-dot\" /><i class=\"myc-icon-loading-dot\" /><i class=\"myc-icon-loading-dot\" /></div>";
+                }
+                jQuery("#myc-container-" + sequence + " .myc-conversation-area").append(innerHTML);
+                jQuery("#myc-container-" + sequence + " input.myc-text").val("");
+                jQuery("#myc-container-" + sequence + " .myc-conversation-area")
+                        .scrollTop(jQuery("#myc-container-" + sequence + " .myc-conversation-area")
+                        .prop("scrollHeight"));
+                textQuery(text, sequence);
+            }
 		}
+
+        sendbutton.removeClass('pressed');
 	});
 
-	jQuery('.send-button').click(function(event) {
-        console.log(message);
+	sendbutton.click(function(event) {
+        if (jQuery.trim(message).length) {
 
-        jQuery(".myc-conversation-area .myc-conversation-request").removeClass("myc-is-active");
+            jQuery(".myc-conversation-area .myc-conversation-request").removeClass("myc-is-active");
 
-        var text = message;
-        var date = new Date();
+            var text = message;
+            var date = new Date();
+            message = "";
 
-        var containerId = jQuery(this).closest(".myc-container").attr('id');
-        var parts = containerId.split("-");
-        var sequence = parts[2];
+            var containerId = jQuery(this).closest(".myc-container").attr('id');
+            var parts = containerId.split("-");
+            var sequence = parts[2];
 
-        var innerHTML = "<div class=\"myc-conversation-bubble-container myc-conversation-bubble-container-request\"><div class=\"myc-conversation-bubble myc-conversation-request myc-is-active\">" + escapeTextInput(text) + "</div>";
-        if (myc_script_vars.show_time) {
-            innerHTML += "<div class=\"myc-datetime\">" + date.toLocaleTimeString() + "</div>";
+            var innerHTML = "<div class=\"myc-conversation-bubble-container myc-conversation-bubble-container-request\"><div class=\"myc-conversation-bubble myc-conversation-request myc-is-active\">" + escapeTextInput(text) + "</div>";
+            if (myc_script_vars.show_time) {
+                innerHTML += "<div class=\"myc-datetime\">" + date.toLocaleTimeString() + "</div>";
+            }
+            innerHTML += "</div>";
+            if (myc_script_vars.show_loading) {
+                innerHTML += "<div class=\"myc-loading\"><i class=\"myc-icon-loading-dot\" /><i class=\"myc-icon-loading-dot\" /><i class=\"myc-icon-loading-dot\" /></div>";
+            }
+            jQuery("#myc-container-" + sequence + " .myc-conversation-area").append(innerHTML);
+            jQuery("#myc-container-" + sequence + " input.myc-text").val("");
+            jQuery("#myc-container-" + sequence + " .myc-conversation-area")
+                .scrollTop(jQuery("#myc-container-" + sequence + " .myc-conversation-area")
+                    .prop("scrollHeight"));
+
+            sendbutton.removeClass('visible');
+
+            textQuery(text, sequence);
         }
-        innerHTML += "</div>";
-        if (myc_script_vars.show_loading) {
-            innerHTML += "<div class=\"myc-loading\"><i class=\"myc-icon-loading-dot\" /><i class=\"myc-icon-loading-dot\" /><i class=\"myc-icon-loading-dot\" /></div>";
-        }
-        jQuery("#myc-container-" + sequence + " .myc-conversation-area").append(innerHTML);
-        jQuery("#myc-container-" + sequence + " input.myc-text").val("");
-        jQuery("#myc-container-" + sequence + " .myc-conversation-area")
-            .scrollTop(jQuery("#myc-container-" + sequence + " .myc-conversation-area")
-                .prop("scrollHeight"));
-        textQuery(text, sequence);
 	});
 
 	/*
@@ -104,7 +119,6 @@ jQuery(document).ready(function() {
 		}
 	}
 
-
 	/* Overlay slide toggle */
 	jQuery(".myc-content-overlay .myc-content-overlay-header").click(function(event){
 		slideToggle();
@@ -113,15 +127,6 @@ jQuery(document).ready(function() {
 	jQuery('.chat-toggle').click(function (event) {
 		slideToggle();
     });
-
-
-    /**
-     * Sends the message
-     */
-    function getMessage() {
-
-    }
-
 });
 
 /**
@@ -259,7 +264,14 @@ function prepareResponse(response, sequence) {
 		jQuery("#myc-container-" + sequence + " .myc-conversation-area .myc-conversation-response").removeClass("myc-is-active");
 
 		var messages = response.result.fulfillment.messages;
-		var numMessages = messages.length;
+		var numMessages = 0;
+
+		if (typeof messages === "undefined") {
+            numMessages = 0;
+		} else {
+			numMessages = messages.length;
+		}
+
 		var index = 0;
 		for (index; index<numMessages; index++) {
 			var message = messages[index];

@@ -4,7 +4,7 @@
 
 	<div class="myc-conversation-area"></div>
 	<div id="myc-input-area">
-		<input class="myc-text" type="text" placeholder="<?php echo $input_text; ?>"></input>
+		<input class="myc-text" type="text" placeholder="<?php echo $input_text; ?>" autofocus>
         <span class="send-button" title="Send Message"></span>
 	</div>
 

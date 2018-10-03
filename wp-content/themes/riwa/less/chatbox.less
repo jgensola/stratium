@@ -93,18 +93,17 @@
             display: inline-block;
 
             padding: 6px 9px;
-            max-width: 80%;
+            max-width: 60%;
 
-            .opacity(.8);
-
-            &:before,
-            &:after {
-                display: none;
-            }
+            text-align: left;
         }
 
-        .myc-is-active {
-            .opacity(1);
+        .myc-conversation-bubble-container {
+            margin-bottom: 12px;
+
+            &:last-of-type {
+                margin-bottom: 20px;
+            }
         }
 
         .myc-conversation-bubble-container-request {
@@ -136,18 +135,31 @@
     .myc-content-overlay-header {
         z-index: 3;
         overflow: hidden;
+        position: relative;
 
         height: 50px;
-        padding: 0 10px 0 0;
+        padding: 0 15px 0 0;
 
-        background: url('@{image-path}chat-logo.svg') @mine-shaft no-repeat 5px 15px;
-        background-size: 150px 17px;
+        background: @mine-shaft;
 
-        font-weight: bold;
         line-height: 50px;
         font-size: 22px;
 
         cursor: pointer;
+
+        &:before {
+            position: absolute;
+            display: inline-block;
+            top: 17px;
+            left: 15px;
+
+            height: 18px;
+            width: 180px;
+
+            background: url('@{image-path}chat-logo.svg') no-repeat;
+            background-size: contain;
+            content: '';
+        }
 
         &:hover .myc-icon-toggle-down {
             .opacity(.8);
@@ -217,8 +229,6 @@
 
             background: transparent;
 
-            font-weight: normal;
-
             .border-radius(40px);
             .flex-display();
             .align-items(center);
@@ -236,7 +246,7 @@
             &:before {
                 display: block;
 
-                margin-top: -3px;
+                margin-top: -2px;
 
                 font-size: 17px;
                 font-family: @icon-font;
@@ -276,6 +286,9 @@
         width: 0;
 
         background: @gray;
+        color: @white;
+
+        font-size: 0;
 
         cursor: pointer;
 
@@ -286,14 +299,13 @@
         .transition(all .4s);
 
         &:after {
-            color: @white;
-
             font-family: @icon-font;
 
-            content: @icon-arrow-alt-circle-right;
+            content: @icon-arrow-up;
         }
 
-        &:hover {
+        &:hover,
+        &.pressed {
             background: @pelorous;
         }
 
@@ -302,6 +314,8 @@
 
             height: 30px;
             width: 30px;
+
+            font-size: 12px;
         }
     }
 
@@ -356,7 +370,6 @@
     .myc-loading {
         display: block;
 
-        padding: 6px 9px;
         margin: 0 auto;
         width: 70px;
 
@@ -416,6 +429,10 @@
             }
         }
     }
+
+    &.pushmenu-push-toleft .myc-toggle-open{
+        bottom: -100%;
+    }
 }
 
 // Screens >= 768px
@@ -448,10 +465,6 @@
             .opacity(1);
         }
 
-        .myc-content-overlay-header {
-            padding-right: 15px;
-        }
-
         .send-button {
             right: 36px;
 
@@ -464,6 +477,10 @@
                 width: 25px;
             }
         }
+
+        &.pushmenu-push-toleft .myc-toggle-open{
+            bottom: 25px;
+        }
     }
 }
 
@@ -474,11 +491,6 @@
 .ie-8,
 .ie-7 {
     @{stratium-pages} {
-        .myc-content-overlay-header {
-            background-size: 131px 17px;
-            background-position: 15px 15px;
-        }
-
         .myc-toggle-closed {
             overflow: hidden;
 
