@@ -1359,8 +1359,8 @@ class _W3_MinifyHelpers {
             $deferJS = true;
             $preloadCSS = true;
         } elseif (preg_match('/Safari/i', $user_agent)) {
-            $deferJS = true;
-            $preloadCSS = true;
+            $deferJS = false;
+            $preloadCSS = false;
         } elseif (preg_match('/Opera/i', $user_agent)) {
             $deferJS = false;
             $preloadCSS = false;

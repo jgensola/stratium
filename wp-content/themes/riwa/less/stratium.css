@@ -1536,6 +1536,11 @@ strong {
   max-height: none;
   height: 100%;
 }
+.page .myc-content-overlay-container .myc-container a,
+.error404 .myc-content-overlay-container .myc-container a {
+  text-decoration: underline;
+  color: #3488a1;
+}
 .page .myc-content-overlay-container .myc-text,
 .error404 .myc-content-overlay-container .myc-text {
   padding: 8px 45px 8px 15px;
@@ -1560,7 +1565,7 @@ strong {
 .error404 .myc-content-overlay-container .myc-conversation-bubble {
   display: inline-block;
   padding: 6px 9px;
-  max-width: 60%;
+  max-width: 75%;
   text-align: left;
 }
 .page .myc-content-overlay-container .myc-conversation-bubble-container,

@@ -443,5 +443,4 @@ endif;
 	do_action('riwa_subheader', $riwa_selected_sub_header);
 
 ?>
-    <!-- W3TC-include-css -->
 <div class="container">

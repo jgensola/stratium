@@ -1,0 +1,12 @@
+"messages": [
+  {
+    "buttons": [
+    {
+      "openUrlAction": {
+        "url": "https://goo.gl/maps/hfGN8cXsH4t"
+      },
+      "title": "AoG Card Link title"
+      }
+    ]
+  }
+]

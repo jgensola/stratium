@@ -111,7 +111,7 @@ if (!class_exists('Riwa_Header_Layouts')) {
                             <div class="contact-details">
                                 <a href="tel:+639177721017" class="mobile">+63 (917) 772-1017</a>
                                 <a href="tel:+63344457065" class="phone">+63 (34) 445-7065</a>
-                                <a href="mailto:+63344457065" class="email">info@stratiumsoftware.com</a>
+                                <a href="mailto:info@stratiumsoftware.com" class="email">info@stratiumsoftware.com</a>
                             </div>
 							
 					<?php else : ?>
@@ -333,7 +333,7 @@ if (!class_exists('Riwa_Header_Layouts')) {
                                         <div class="contact-details">
                                             <a href="tel:+639177721017" class="mobile">+63 (917) 772-1017</a>
                                             <a href="tel:+63344457065" class="phone">+63 (34) 445-7065</a>
-                                            <a href="mailto:+63344457065" class="email">info@stratiumsoftware.com</a>
+                                            <a href="mailto:info@stratiumsoftware.com" class="email">info@stratiumsoftware.com</a>
                                         </div>
 
                                     <?php else : ?>
