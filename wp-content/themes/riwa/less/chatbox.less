@@ -65,7 +65,7 @@
                 display: block;
                 overflow: auto;
 
-                padding: 20px;
+                padding: 20px 20px 0;
                 max-height: none;
                 height: 100%;
             }
@@ -439,6 +439,33 @@
     &.pushmenu-push-toleft .myc-toggle-open{
         bottom: -100%;
     }
+
+    .map:after {
+        display: inline-block;
+
+        margin: 7px 0 3px;
+        min-width: 180px;
+        min-height: 100px;
+        width: 100%;
+        padding: 20px 0;
+
+        color: @scorpion;
+        background: @concrete;
+
+        font-family: @icon-font;
+        font-size: 66px;
+        text-decoration: none;
+        text-align: center;
+
+        content: @icon-map;
+
+        .opacity(1);
+        .transition(all .4s);
+    }
+
+    a:hover .map:after {
+        .opacity(.7);
+    }
 }
 
 // Screens >= 768px
@@ -447,7 +474,7 @@
         .myc-content-overlay {
             height: 75%;
 
-            max-height: 500px;
+            max-height: 550px;
             max-width: 300px;
             min-height: auto;
             min-width: auto;

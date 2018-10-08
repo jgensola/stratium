@@ -86,7 +86,7 @@ jQuery(function ($) {
 	// $(".form-containert").hide();
 	$(".icon-chevron-thin-down").hide();
 	$(".btn-slide").on('click', function () {
-		$(this).toggleClass('active')
+		$(this).toggleClass('active');
 		$(this).find(".icon-chevron-thin-up, .icon-chevron-thin-down").toggle();
 		$(".form-container").slideToggle({
 			direction: "up"
@@ -106,8 +106,8 @@ jQuery(function ($) {
 				to: e,
 				speed: 3e3,
 				refreshInterval: 50
-			})
-		})
+			});
+		});
 	});
 
 

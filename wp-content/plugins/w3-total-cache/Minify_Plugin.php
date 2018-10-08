@@ -1347,31 +1347,35 @@ class _W3_MinifyHelpers {
         $deferJS = false;
         $preloadCSS = false;
 
-        $user_agent = $_SERVER['HTTP_USER_AGENT'];
+        $agent = $_SERVER["HTTP_USER_AGENT"];
 
-        if (preg_match('/MSIE/i', $user_agent)) {
+        if( preg_match('/MSIE (\d+\.\d+);/', $agent) ) {
             $deferJS = false;
             $preloadCSS = false;
-        } elseif (preg_match('/Firefox/i', $user_agent)) {
-            $deferJS = true;
+        } else if (preg_match('/Edge\/\d+/', $agent) ) {
+            $deferJS = false;
             $preloadCSS = false;
-        } elseif (preg_match('/Chrome/i', $user_agent)) {
+        } else if (preg_match('/Chrome[\/\s](\d+\.\d+)/', $agent) ) {
             $deferJS = true;
             $preloadCSS = true;
-        } elseif (preg_match('/Safari/i', $user_agent)) {
+        } else if ( preg_match('/Firefox[\/\s](\d+\.\d+)/', $agent) ) {
+            $deferJS = true;
+            $preloadCSS = false;
+        } else if ( preg_match('/OPR[\/\s](\d+\.\d+)/', $agent) ) {
             $deferJS = false;
             $preloadCSS = false;
-        } elseif (preg_match('/Opera/i', $user_agent)) {
+        } else if (preg_match('/Safari[\/\s](\d+\.\d+)/', $agent) ) {
             $deferJS = false;
             $preloadCSS = false;
         } else {
             $deferJS = false;
+            $preloadCSS = false;
         }
 
         if ($filetype == "JS") {
             return $deferJS;
         } else {
-            return$preloadCSS;
+            return $preloadCSS;
         }
     }
 }
