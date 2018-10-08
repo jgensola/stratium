@@ -2,6 +2,15 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/select2/3/select2.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/select2/3/select2.min.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/select2/4/select2.full.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/select2/4/select2.full.min.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/select2/4/select2.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/timepicker/jquery-ui-timepicker-addon.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/timepicker/jquery-ui-timepicker-addon.min.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/js/acf-field-group.min.js" />
+        <item url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/js/acf-input.min.js" />
         <item url="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/admin.min.js" />
         <item url="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.min.js" />
         <item url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Cdn_GoogleDrive_Page_View.min.min.js" />
@@ -57,6 +66,15 @@
       <root url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/external/js/jquery.cookie.min.min.js" />
       <root url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/external/js/unslider-min.min.js" />
       <root url="file://$PROJECT_DIR$/wp-content/plugins/autoptimize/classes/static/toolbar.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/select2/3/select2.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/select2/3/select2.min.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/select2/4/select2.full.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/select2/4/select2.full.min.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/select2/4/select2.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/timepicker/jquery-ui-timepicker-addon.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/inc/timepicker/jquery-ui-timepicker-addon.min.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/js/acf-field-group.min.js" />
+      <root url="file://$PROJECT_DIR$/wp-content/plugins/advanced-custom-fields/assets/js/acf-input.min.js" />
       <root url="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/admin.min.js" />
       <root url="file://$PROJECT_DIR$/wp-content/plugins/my-chatbot/assets/js/frontend.min.js" />
       <root url="file://$PROJECT_DIR$/wp-content/plugins/w3-total-cache/Cdn_GoogleDrive_Page_View.min.min.js" />
