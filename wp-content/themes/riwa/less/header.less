@@ -129,6 +129,10 @@
         }
     }
 
+    &.chat-active {
+        overflow: hidden !important;
+    }
+
     .dark-screen {
         display: none;
         position: fixed;
@@ -239,6 +243,10 @@
             #main-navigation #navigation {
                 left: 0;
             }
+        }
+
+        &.chat-active {
+            overflow: auto !important;
         }
     }
 }

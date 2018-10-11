@@ -102,6 +102,14 @@
             max-width: 75%;
 
             text-align: left;
+            word-wrap: break-word;
+
+            img {
+                display: block;
+                
+                margin: 3px 0;
+                max-width: 180px;
+            }
         }
 
         .myc-conversation-bubble-container {
@@ -373,46 +381,20 @@
         }
     }
 
-    .myc-loading {
+    .myc-loading.active {
         display: block;
 
-        margin: 0 auto;
-        width: 70px;
+        margin: 0 0 20px;
+        width: 54px;
+        height: 33px;
+
+        background: url('@{image-path}loading.gif') @white no-repeat center;
+        background-size: contain;
 
         text-align: center;
         vertical-align: center;
-    }
 
-    .myc-icon-loading-dot {
-        display: inline-block;
-
-        margin: 0 2px;
-        height: 5px;
-        width: 5px;
-
-        background: @scorpion;
-
-        font-size: 1em;
-
-        .border-radius(5px);
-        .animation(sk-bouncedelay 1.4s infinite ease-in-out both);
-
-        &:nth-child(1) {
-            .animation-delay(-0.32s);
-        }
-
-        &:nth-child(2) {
-            .animation-delay(-0.16s);
-        }
-
-        .keyframes(sk-bouncedelay, {
-            0%, 80%, 100% {
-                .transform(scale(0));
-            }
-            40% {
-              .transform(scale(1));
-            }
-        });
+        .border-radius(0 10px 10px 10px);
     }
 
     &.page-template-page-static-php,
@@ -465,6 +447,10 @@
 
     a:hover .map:after {
         .opacity(.7);
+    }
+
+    .capital {
+        text-transform: capitalize;
     }
 }
 

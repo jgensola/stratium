@@ -59,6 +59,16 @@
             background: #000;
         }
 
+        .loader:after {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            background: url('<?php echo site_url() ?>/wp-content/themes/riwa/images/loading.gif');
+
+            content: '';
+        }
+
         .loader img {
             display: block;
             width: 100%;

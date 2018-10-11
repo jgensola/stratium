@@ -1,1 +1,1 @@
-<a href="/contact" title="services"></a>
+<div class="myc-loading"><i class="myc-icon-loading-dot"></i><i class="myc-icon-loading-dot" ></i><i class="myc-icon-loading-dot"></i></div>
